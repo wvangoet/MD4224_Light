@@ -32,8 +32,7 @@ else:
 parameters['n_macroparticles']			= int(5E5)
 
 # Make sure to fix the initial distribution at the nominal working point (6.21, 6.24)
-parameters['BLonD_File'] = '../../00_Longitudinal_Distribution/BLonD_Longitudinal_Distributions/BLonD_Longitudinal_Distn_Run2_MD4224.npz'
-parameters['Tomo_file'] = '../../00_Longitudinal_Distribution/PyORBIT_Tomo_file_MD4224_HB.mat'
+parameters['tomo_file'] = '../../00_Longitudinal_Distribution/PyORBIT_Tomo_file_MD4224_HB.mat'
 parameters['input_distn']=''
 
 parameters['gamma']			= 2.49253731343
@@ -74,6 +73,7 @@ parameters['turns_update'] = sorted(tu)
 # Simulation switches
 #-----------------------------------------------------------------------
 switches = {
+        'CreateDistn': True,
 	'Update_Twiss':	False,  # Perform PTC twiss and dump each turn - needed to output tune changes
 	'GridSizeX': 128,
 	'GridSizeY': 128,
@@ -81,9 +81,11 @@ switches = {
 }
 
 if space_charge_flag:
-        switches['Space_Charge'] = True
+        switches['Space_Charge'] = True        
+        parameters['BLonD_File'] = '../../00_Longitudinal_Distribution/BLonD_Longitudinal_Distributions/BLonD_Longitudinal_Distn_Run2_MD4224_SC.npz'
 else:
         switches['Space_Charge'] = False
+        parameters['BLonD_File'] = '../../00_Longitudinal_Distribution/BLonD_Longitudinal_Distributions/BLonD_Longitudinal_Distn_Run2_MD4224.npz'
         
 
 # PTC RF Table Parameters
