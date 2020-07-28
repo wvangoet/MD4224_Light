@@ -27,8 +27,7 @@ else:
         print 'simulation_parameters: transverse plane selection not recognised, please use either H or V in the folder name'
         print 'For example: 0_H_07 will launch a no space charge simulation for the horizontal tune of 6.07'
         exit(0)
-        
-        
+                
 parameters['n_macroparticles']			= int(5E5)
 
 # Make sure to fix the initial distribution at the nominal working point (6.21, 6.24)
@@ -56,7 +55,7 @@ parameters['beta'] 	= np.sqrt(parameters['gamma']**2-1)/parameters['gamma']
 c 			= 299792458
 parameters['sig_z'] 	= (parameters['beta'] * c * parameters['blength'])/4.
 
-parameters['turns_max'] = int(2200)
+parameters['turns_max'] = int(1)
 
 # Define how often we dump bunch output files
 #-----------------------------------------------------------------------
