@@ -153,11 +153,11 @@ IF(quad_error==1){
 ! Qx = 0.21122 + 0.73706*x + 49.71225*x^2
 ! Qy = 0.32396 + -2.92869*x + 4.99208*x^2
 !Qx := 0.21122;
-Qxp := 0.73706;
-Qxp2 := 49.71225;
+!Qxp := 0.73706;
+!Qxp2 := 49.71225;
 !Qy := 0.32396;
-Qyp := -2.92869;
-Qyp2 := 4.99208;
+!Qyp := -2.92869;
+!Qyp2 := 4.99208;
 
 ! Override existing macro in macros file due to bug when using MAD-X 5.02
 ptc_twiss_macro(order): macro = {
@@ -219,9 +219,8 @@ match_Chroma_PFW(QQxp, QQyp, QQxp2, QQyp2): macro={
 	value, pfwk2_f, pfwk2_d, pfwk3_f, pfwk3_d;
 };
 
-use, sequence=PS;
-EXEC, match_Tunes(use_pfw, tune_x, tune_y);
-!EXEC, match_Chroma_PFW(Qxp, Qyp, Qxp2, Qyp2);
+IF(match_tunes==1){EXEC, match_Tunes(use_pfw, tune_x, tune_y);}
+IF(match_chroma==1){EXEC, match_Chroma_PFW(Qxp, Qyp, Qxp2, Qyp2);}
 
 value, tune_x, tune_y, Qxp, Qyp; 
 

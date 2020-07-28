@@ -318,7 +318,9 @@ def generate_initial_distribution_from_tomo(parameters, matfile=0, Lattice=None,
 	parameters['circumference']    = Lattice.getLength()
 	parameters['length'] = Lattice.getLength()/Lattice.nHarm
 	
-	# Create Twiss containers
+	print 'BETA_X_0 = ', Lattice.betax0
+	print 'ALPHA_X_0 = ', Lattice.alphax0
+        # Create Twiss containers
 	twissX = TwissContainer(alpha = parameters['alphax0'], beta = parameters['betax0'], emittance = parameters['epsn_x'] / parameters['gamma'] / parameters['beta'])
 	twissY = TwissContainer(alpha = parameters['alphay0'], beta = parameters['betay0'], emittance = parameters['epsn_y'] / parameters['gamma'] / parameters['beta'])
 	dispersionx = {'etax0': parameters['etax0'], 'etapx0': parameters['etapx0']}
