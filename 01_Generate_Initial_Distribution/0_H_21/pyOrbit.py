@@ -167,6 +167,7 @@ if sts['turn'] < 0:
 	p['phi_s']           = 0
 	p['gamma']           = bunch.getSyncParticle().gamma()
 	p['beta']            = bunch.getSyncParticle().beta()
+        print '\n\tBETA = ', bunch.getSyncParticle().beta()
 	p['energy']          = 1e9 * bunch.mass() * bunch.getSyncParticle().gamma()
 	# ~ p['bunch_length'] = p['sig_z']/speed_of_light/bunch.getSyncParticle().beta()*4
 	p['bunch_length'] = p['bunch_length']
