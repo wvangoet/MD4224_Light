@@ -1,12 +1,17 @@
-import math
+import os
 import sys
 import time
-import orbit_mpi
+import math
 import timeit
+import orbit_mpi
 import numpy as np
 import scipy.io as sio
 from scipy.stats import moment
-import os
+
+# Use switches in simulation_parameters.py in current folder
+#-------------------------------------------------------------
+from simulation_parameters import switches as s
+from simulation_parameters import parameters as p
 
 # utils
 from orbit.utils.orbit_mpi_utils import bunch_orbit_to_pyorbit, bunch_pyorbit_to_orbit
@@ -54,11 +59,6 @@ comm = orbit_mpi.mpi_comm.MPI_COMM_WORLD
 rank = orbit_mpi.MPI_Comm_rank(comm)
 print '\n\tStart PyORBIT simulation on MPI process: ', rank
 
-# Use switches in simulation_parameters.py in current folder
-#-------------------------------------------------------------
-from simulation_parameters import switches as s
-from simulation_parameters import parameters as p
-orbit_mpi.MPI_Barrier(comm)
 
 # Function to check that a file isn't empty (common PTC file bug)
 def is_non_zero_file(fpath):  
@@ -113,6 +113,22 @@ if not os.path.exists(status_file):
 else:
 	with open(status_file) as fid:
 		sts = pickle.load(fid)
+                
+# Write tunes.str file for MAD-X input
+#-----------------------------------------------------------------------
+script_name = 'tunes.str'
+if os.path.exists(script_name):  
+	print 'tune file ' + script_name + ' already exists. Deleting'
+	os.remove(script_name)
+
+f= open(script_name,"w")
+
+f.write('/**********************************************************************************\n')
+f.write('*                             Tunes for PTC-PyORBIT simulation\n')
+f.write('***********************************************************************************/\n')
+f.write('tune_x = 0.' + str(p['tunex'][-2:]) + ';\n')
+f.write('tune_y = 0.' + str(p['tuney'][-2:]) + ';\n')
+f.write('lattice_start = ' + transverse_plane + ';')
 
 # Generate Lattice (MADX + PTC) - Use MPI to run on only one 'process'
 #-----------------------------------------------------------------------
