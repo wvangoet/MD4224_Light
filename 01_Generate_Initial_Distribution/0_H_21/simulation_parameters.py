@@ -14,6 +14,7 @@ scan_tune = os.getcwd().split('/')[-1][-2:]
 parameters = {}
 
 # Nominal working point for BCMS PS beam
+parameters['transverse_plane'] = transverse_plane
 parameters['tunex']			= '6.21'
 parameters['tuney']			= '6.24'
 

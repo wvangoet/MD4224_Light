@@ -129,7 +129,7 @@ if not rank:
         f.write('***********************************************************************************/\n')
         f.write('tune_x = 0.' + str(p['tunex'][-2:]) + ';\n')
         f.write('tune_y = 0.' + str(p['tuney'][-2:]) + ';\n')
-        f.write('lattice_start = ' + transverse_plane + ';')
+        f.write('lattice_start = ' + p['transverse_plane'] + ';')
 orbit_mpi.MPI_Barrier(comm)
 
 # Generate Lattice (MADX + PTC) - Use MPI to run on only one 'process'
