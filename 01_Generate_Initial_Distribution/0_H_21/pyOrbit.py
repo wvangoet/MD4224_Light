@@ -8,11 +8,6 @@ import scipy.io as sio
 from scipy.stats import moment
 import os
 
-# Use switches in simulation_parameters.py in current folder
-#-------------------------------------------------------------
-from simulation_parameters import switches as s
-from simulation_parameters import parameters as p
-
 # utils
 from orbit.utils.orbit_mpi_utils import bunch_orbit_to_pyorbit, bunch_pyorbit_to_orbit
 from orbit.utils.consts import mass_proton, speed_of_light, pi
@@ -58,6 +53,12 @@ readScriptPTC_noSTDOUT = suppress_STDOUT(readScriptPTC)
 comm = orbit_mpi.mpi_comm.MPI_COMM_WORLD
 rank = orbit_mpi.MPI_Comm_rank(comm)
 print '\n\tStart PyORBIT simulation on MPI process: ', rank
+
+# Use switches in simulation_parameters.py in current folder
+#-------------------------------------------------------------
+from simulation_parameters import switches as s
+from simulation_parameters import parameters as p
+orbit_mpi.MPI_Barrier(comm)
 
 # Function to check that a file isn't empty (common PTC file bug)
 def is_non_zero_file(fpath):  
