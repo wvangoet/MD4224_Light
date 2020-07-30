@@ -14,6 +14,7 @@ scan_tune = os.getcwd().split('/')[-1][-2:]
 parameters = {}
 
 # Nominal working point for BCMS PS beam
+parameters['transverse_plane'] = transverse_plane
 parameters['tunex']			= '6.21'
 parameters['tuney']			= '6.24'
 
@@ -104,19 +105,3 @@ RFparameters = {
 	'voltage_MV': RF_voltage_MV,
 	'phase': RF_phase
 }
-
-# Write tunes.str file for MAD-X input
-#-----------------------------------------------------------------------
-script_name = 'tunes.str'
-if os.path.exists(script_name):  
-	print 'tune file ' + script_name + ' already exists. Deleting'
-	os.remove(script_name)
-
-f= open(script_name,"w")
-
-f.write('/**********************************************************************************\n')
-f.write('*                             Tunes for PTC-PyORBIT simulation\n')
-f.write('***********************************************************************************/\n')
-f.write('tune_x = 0.' + str(parameters['tunex'][-2:]) + ';\n')
-f.write('tune_y = 0.' + str(parameters['tuney'][-2:]) + ';\n')
-f.write('lattice_start = ' + transverse_plane + ';')
