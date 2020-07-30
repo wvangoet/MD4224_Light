@@ -116,19 +116,21 @@ else:
                 
 # Write tunes.str file for MAD-X input
 #-----------------------------------------------------------------------
-script_name = 'tunes.str'
-if os.path.exists(script_name):  
-	print 'tune file ' + script_name + ' already exists. Deleting'
-	os.remove(script_name)
+if not rank:
+        script_name = 'tunes.str'
+        if os.path.exists(script_name):  
+                print 'tune file ' + script_name + ' already exists. Deleting'
+                os.remove(script_name)
 
-f= open(script_name,"w")
+        f= open(script_name,"w")
 
-f.write('/**********************************************************************************\n')
-f.write('*                             Tunes for PTC-PyORBIT simulation\n')
-f.write('***********************************************************************************/\n')
-f.write('tune_x = 0.' + str(p['tunex'][-2:]) + ';\n')
-f.write('tune_y = 0.' + str(p['tuney'][-2:]) + ';\n')
-f.write('lattice_start = ' + transverse_plane + ';')
+        f.write('/**********************************************************************************\n')
+        f.write('*                             Tunes for PTC-PyORBIT simulation\n')
+        f.write('***********************************************************************************/\n')
+        f.write('tune_x = 0.' + str(p['tunex'][-2:]) + ';\n')
+        f.write('tune_y = 0.' + str(p['tuney'][-2:]) + ';\n')
+        f.write('lattice_start = ' + transverse_plane + ';')
+orbit_mpi.MPI_Barrier(comm)
 
 # Generate Lattice (MADX + PTC) - Use MPI to run on only one 'process'
 #-----------------------------------------------------------------------
