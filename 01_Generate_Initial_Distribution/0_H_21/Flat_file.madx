@@ -26,7 +26,7 @@ ELSE{call, file="PS_Lattice/ps_ss_h7.seq";}
 call, file="PS_Lattice/ps.str";
 call, file="PS_Lattice/ps_pro_bare_machine.str";
 call, file="PS_Lattice/macros.ptc";
-call, file="tunes.str";
+call, file="./tunes.str";
 
 /***********************************************************************
  * Create a MAD-X beam and tell MAD-X which accelerator lattice to use.
