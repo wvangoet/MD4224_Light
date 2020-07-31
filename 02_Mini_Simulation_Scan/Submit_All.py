@@ -78,7 +78,7 @@ V_locations_NoSC.append('/0_V_24')
 if Horizontal_Scan_NoSC:
 	for loc in H_locations_NoSC:
 		print '--------------------------------------------------------------------------------------------'
-		print '\t Submitting HPC-Batch simulation: ',loc[22],' Scan, tune (6.',loc[-2:] ,', 6.24) No Space Charge'
+		print '\t Submitting HPC-Batch simulation: ', loc
 		print '--------------------------------------------------------------------------------------------'
 		dir_ = master_dir + loc
 		make_command = 'python Make_SLURM_submission_script.py'
@@ -90,7 +90,7 @@ if Horizontal_Scan_NoSC:
 if Vertical_Scan_NoSC:
 	for loc in V_locations_NoSC:
 		print '--------------------------------------------------------------------------------------------'
-		print '\t Submitting HPC-Batch simulation: ',loc[22],' Scan, tune (6.21, 6.',loc[-2:] ,')  No Space Charge'
+		print '\t Submitting HPC-Batch simulation: ', loc
 		print '--------------------------------------------------------------------------------------------'
 		dir_ = master_dir + loc
 		make_command = 'python Make_SLURM_submission_script.py'
@@ -102,7 +102,7 @@ if Vertical_Scan_NoSC:
 if Horizontal_Scan:
 	for loc in H_locations:
 		print '--------------------------------------------------------------------------------------------'
-		print '\t Submitting HPC-Batch simulation: ',loc[21],' Scan, tune (6.',loc[-2:] ,', 6.24) Slice-by-slice space charge'
+		print '\t Submitting HPC-Batch simulation: ', loc
 		print '--------------------------------------------------------------------------------------------'
 		dir_ = master_dir + loc
 		make_command = 'python Make_SLURM_submission_script.py'
@@ -114,7 +114,7 @@ if Horizontal_Scan:
 if Vertical_Scan:
 	for loc in V_locations:
 		print '--------------------------------------------------------------------------------------------'
-		print '\t Submitting HPC-Batch simulation: ',loc[21],' Scan, tune (6.21, 6.',loc[-2:] ,') Slice-by-slice space charge'
+		print '\t Submitting HPC-Batch simulation: ', loc
 		print '--------------------------------------------------------------------------------------------'
 		dir_ = master_dir + loc
 		make_command = 'python Make_SLURM_submission_script.py'
