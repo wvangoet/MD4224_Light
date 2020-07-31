@@ -12,5 +12,6 @@ rm *.tfs
 rm PTC-PyORBIT_flat_file.flt
 rm tunespread.dat
 rm madx.ps
+rm PS_Lattice/tunes.str
 
 . clean_junk.sh
