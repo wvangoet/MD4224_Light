@@ -14,14 +14,15 @@ scan_tune = os.getcwd().split('/')[-1][-2:]
 parameters = {}
 
 # Nominal working point for BCMS PS beam
-parameters['transverse_plane'] = transverse_plane
 parameters['tunex']			= '6.21'
 parameters['tuney']			= '6.24'
 
 if transverse_plane == 'H':
+        parameters['transverse_plane_flag'] = 1
         parameters['lattice_start'] 	= 'PR.BWSH65'
         parameters['tunex']             = '6.' + str(scan_tune)
 elif transverse_plane == 'V':
+        parameters['transverse_plane_flag'] = 0
         parameters['lattice_start'] 	= 'PR.BWSV64'
         parameters['tuney']             = '6.' + str(scan_tune)
 else:

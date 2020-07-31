@@ -47,7 +47,7 @@ seqedit,sequence = PS;
 	remove, element=SELECTED;
 endedit;
 
-IF(lattice_start==V){
+IF(lattice_start==0){
 seqedit, sequence=PS;
 	flatten;
 	cycle , start=PR.BWSV64;

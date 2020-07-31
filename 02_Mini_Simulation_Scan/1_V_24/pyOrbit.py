@@ -129,7 +129,7 @@ if not rank:
         f.write('***********************************************************************************/\n')
         f.write('tune_x = 0.' + str(p['tunex'][-2:]) + ';\n')
         f.write('tune_y = 0.' + str(p['tuney'][-2:]) + ';\n')
-        f.write('lattice_start = ' + p['transverse_plane'] + ';')
+        f.write('lattice_start = ' + str(p['transverse_plane_flag']) + ';')
         f.close()
 orbit_mpi.MPI_Barrier(comm)
 
