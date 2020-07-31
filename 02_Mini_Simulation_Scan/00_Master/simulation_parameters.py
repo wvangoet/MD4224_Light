@@ -57,7 +57,7 @@ print 'beta = ', parameters['beta']
 c 			= 299792458
 parameters['sig_z'] 	= (parameters['beta'] * c * parameters['blength'])/4.
 
-parameters['turns_max'] = int(1)
+parameters['turns_max'] = int(2200)
 
 # Define how often we dump bunch output files
 #-----------------------------------------------------------------------
