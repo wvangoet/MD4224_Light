@@ -30,7 +30,7 @@ print 'simulation_parameters: transverse_plane = ', transverse_plane
 voltage_str = os.getcwd().split('/')[-1][-4:]
 print 'simulation_parameters: voltage = ', voltage_str
 
-jobname = + str(transverse_plane) + '_' + str(voltage_str)
+jobname = str(transverse_plane) + '_' + str(voltage_str)
 
 path_to_simulation = os.path.dirname(os.path.realpath(__file__)) # This directory
 
