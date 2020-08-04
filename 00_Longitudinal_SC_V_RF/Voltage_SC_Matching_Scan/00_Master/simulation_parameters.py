@@ -18,7 +18,7 @@ print 'simulation_parameters: voltage = ', voltage_str
 
 parameters = {}
 
-parameters['BLonD_file'] = '../../BLonD_Longitudinal_Distributions/BLonD_Longitudinal_Distn_MD4224_'+ voltage_str +'kV.npz.mat'
+parameters['BLonD_file'] = '../../BLonD_Longitudinal_Distributions/BLonD_Longitudinal_Distn_MD4224_'+ voltage_str +'kV.npz'
 
 # Nominal working point for BCMS PS beam
 parameters['tunex']			= '6.21'
