@@ -28,7 +28,7 @@ H_locations.append('1_H_18p0')
 
 V_locations = []
 V_locations.append('1_V_21p2')
-V_locations.append('1_v_21p0')
+V_locations.append('1_V_21p0')
 V_locations.append('1_V_20p8')
 V_locations.append('1_V_20p6')
 V_locations.append('1_V_20p4')

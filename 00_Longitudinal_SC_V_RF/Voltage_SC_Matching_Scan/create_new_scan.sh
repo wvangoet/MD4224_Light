@@ -24,7 +24,7 @@ cp -r ${folder_in} 1_H_18p0
 cp -r ${folder_in} 0_V_21p2
 
 cp -r ${folder_in} 1_V_21p2
-cp -r ${folder_in} 1_v_21p0
+cp -r ${folder_in} 1_V_21p0
 cp -r ${folder_in} 1_V_20p8
 cp -r ${folder_in} 1_V_20p6
 cp -r ${folder_in} 1_V_20p4
