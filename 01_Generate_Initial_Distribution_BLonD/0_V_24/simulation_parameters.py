@@ -84,10 +84,10 @@ switches = {
 
 if space_charge_flag:
         switches['Space_Charge'] = True        
-        parameters['BLonD_File'] = '../../00_Longitudinal_SC_V_RF/BLonD_Longitudinal_Distributions/BLonD_Longitudinal_Distn_MD4224_18p2kV.npz'
+        parameters['BLonD_file'] = '../../00_Longitudinal_SC_V_RF/BLonD_Longitudinal_Distributions/BLonD_Longitudinal_Distn_MD4224_18p2kV.npz'
 else:
         switches['Space_Charge'] = False
-        parameters['BLonD_File'] = '../../00_Longitudinal_SC_V_RF/BLonD_Longitudinal_Distributions/BLonD_Longitudinal_Distn_MD4224_21p2kV.npz'
+        parameters['BLonD_file'] = '../../00_Longitudinal_SC_V_RF/BLonD_Longitudinal_Distributions/BLonD_Longitudinal_Distn_MD4224_21p2kV.npz'
         
 
 # PTC RF Table Parameters
