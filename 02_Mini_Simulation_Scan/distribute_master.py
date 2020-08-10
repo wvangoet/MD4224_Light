@@ -3,7 +3,7 @@ import shutil
 pyorbit = False
 simulation_parameters = False
 lib_bunch_gather = False
-bunch_plotting = True
+bunch_plotting = False
 
 Horizontal_Scan_NoSC = True
 Horizontal_Scan = True
