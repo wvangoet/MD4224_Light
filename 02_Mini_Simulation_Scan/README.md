@@ -22,6 +22,7 @@
 
 ## Output_playground_SC_NoSC.ipynb:
 - Once simulations are complete, one may use this notebook to compare all output/output.mat files in which we record turn-by-turn bunch data
+- Output plots are saved in Plots/
 
 ## create_new_scan.sh
 - copies 00_Master to create full scan
