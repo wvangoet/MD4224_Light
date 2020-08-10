@@ -12,10 +12,10 @@
 - **Flat_file.madx**: MAD-X script used to create a PTC flat file, read by PyORBIT to create the accelerator lattice
 - **Make_SLURM_submission_script.py**: used to automatically generate the HPC-Batch simulation submission script
 - **Plot_Tune_and_Distn_Footprints.py**: used to plot tune footprint and bunch distributions for dumped turns (select in simulation parameters)
-- **clean_all.sh**: resets simulation folder completely - WARNING: removes all simulation output
+- **clean_all.sh**: resets simulation folder completely - **WARNING: removes all simulation output**
 - **clean_run.sh**: removes simulation output files
 - **clean_junk.sh**: removes junk files from simulation run
-- **setup_environment.sh**: calls PyORBIT custom enviroment - required for a simulation on AFS/LXPlus/HPC-Batch
+- **setup_environment.sh**: calls PyORBIT custom enviroment - required for a simulation on AFS/LXPlus/HPC-Batch (note python 2.7)
 - **START_local.sh**: script to run simulaiton locally in an AFS accessible directory (LXPlus, HPC-Batch, etc)
 - **PTC/**: PTC scripts
 - **PS_Lattice/**: fixed version of the PS lattice pulled from acc-models
