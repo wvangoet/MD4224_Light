@@ -13,6 +13,7 @@ from scipy.optimize import curve_fit
 from matplotlib.patches import Patch
 import matplotlib.gridspec as gridspec
 from scipy.stats import moment, kurtosis
+matplotlib.use('Agg')   # suppress opening of plots
 
 def make_directory(path):
     try:
