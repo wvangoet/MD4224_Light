@@ -1,5 +1,5 @@
 # MD4224_Light
-## 02_Mini_Simulation_Scan: Mini simulation scan (sc grid 64 x 64 x 32, 5E4 particles) using Tomo longitudinal distribution
+## 03_Mini_Simulation_Scan_BLonD: Mini simulation scan (sc grid 64 x 64 x 32, 5E4 particles) using BLonD longitudinal distribution
 
 - Each simulation in the scan has an identical setup, and uses the folder name to set certain switches.
 - Start by editing the simulation in 00_Master.
