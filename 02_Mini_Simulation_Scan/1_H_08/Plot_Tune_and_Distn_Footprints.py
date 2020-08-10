@@ -142,9 +142,9 @@ plt.rcParams['lines.markersize'] = 5
 
 # Location of bunch files
 #-----------------------------------------------------------------------
-source_dir =  'bunch_output/'
-folder = './Bunch_Plots' #output directory
-make_directory(folder)
+source_dir =  './1_H_08/bunch_output/'
+folder = source_dir
+
 
 files = glob.glob(source_dir + '*.mat')
 sorted(files)
