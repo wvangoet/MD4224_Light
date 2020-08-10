@@ -9,7 +9,7 @@
 ## 00_Master:
 - **simulation_parameters.py**: majority of simulation setup is done here
 - **pyOrbit.py**: main simulation file
-- **Flat_file.madx: MAD-X script used to create a PTC flat file, read by PyORBIT to create the accelerator lattice
+- **Flat_file.madx**: MAD-X script used to create a PTC flat file, read by PyORBIT to create the accelerator lattice
 - **Make_SLURM_submission_script.py**: used to automatically generate the HPC-Batch simulation submission script
 - **Plot_Tune_and_Distn_Footprints.py**: used to plot tune footprint and bunch distributions for dumped turns (select in simulation parameters)
 - **clean_all.sh**: resets simulation folder completely - WARNING: removes all simulation output
