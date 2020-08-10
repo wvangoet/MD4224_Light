@@ -43,36 +43,36 @@ module load mpi/mvapich2/2.3
 tstart=$(date +%s)
 
 # Run the jobs
-srun --exclusive -n 1 1_H_07/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_H_08/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_H_09/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_H_10/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_H_11/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_H_12/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_H_13/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_H_14/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_H_15/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_H_16/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_H_17/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_H_18/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_H_19/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_H_20/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_H_21/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_V_10/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_V_11/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_V_12/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_V_13/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_V_14/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_V_15/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_V_16/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_V_17/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_V_18/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_V_19/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_V_20/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_V_21/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_V_22/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_V_23/Plot_Tune_and_Distn_Footprints.py &
-srun --exclusive -n 1 1_V_24/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_H_07/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_H_08/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_H_09/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_H_10/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_H_11/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_H_12/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_H_13/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_H_14/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_H_15/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_H_16/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_H_17/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_H_18/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_H_19/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_H_20/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_H_21/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_V_10/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_V_11/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_V_12/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_V_13/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_V_14/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_V_15/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_V_16/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_V_17/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_V_18/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_V_19/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_V_20/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_V_21/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_V_22/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_V_23/Plot_Tune_and_Distn_Footprints.py &
+srun --exclusive -n 1 ./1_V_24/Plot_Tune_and_Distn_Footprints.py &
 wait
 
 tend=$(date +%s)
