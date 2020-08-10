@@ -16,7 +16,7 @@
 - **clean_run.sh**: removes simulation output files
 - **clean_junk.sh**: removes junk files from simulation run
 - **setup_environment.sh**: calls PyORBIT custom enviroment - required for a simulation on AFS/LXPlus/HPC-Batch (note python 2.7)
-- **START_local.sh**: script to run simulaiton locally in an AFS accessible directory (LXPlus, HPC-Batch, etc)
+- **START_local.sh**: script to run simulation locally in an AFS accessible directory (LXPlus, HPC-Batch, etc)
 - **PTC/**: PTC scripts
 - **PS_Lattice/**: fixed version of the PS lattice pulled from acc-models
 - **lib/**: PyORBIT libraries used for things such as generation of initial distribution, generating and handling output etc
@@ -26,7 +26,7 @@
 - Output plots are saved in Plots/
 
 ## create_new_scan.sh
-- copies 00_Master to create full scan
+- copies 00_Master to create full simulation scan folder structure for both H and V scans with and without space charge (or as selected in create_new_scan.sh)
 
 ## Submit_All.py
 - python script used to go into each simulation folder, run Make_SLURM_submission_script to create SLURM_submission_script.sh for each simulation, then calls the script to launch on HPC-Batch
@@ -34,4 +34,3 @@
 ## Plot_SLURM.sh
 - SLURM submission script to plot bunch distirbutions and tune footprints for all space charge simulations in the scan
 - use like: sbatch Plot_SLURM.sh (on HPC-Batch only)
-
