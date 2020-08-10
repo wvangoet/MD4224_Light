@@ -5,6 +5,8 @@ import glob
 import imageio
 import numpy as np
 import scipy.io as sio
+import matplotlib
+matplotlib.use('Agg')   # suppress opening of plots
 import matplotlib.cm as cm
 from math import log10, floor
 import matplotlib.pyplot as plt
@@ -13,8 +15,6 @@ from scipy.optimize import curve_fit
 from matplotlib.patches import Patch
 import matplotlib.gridspec as gridspec
 from scipy.stats import moment, kurtosis
-import matplotlib
-matplotlib.use('Agg')   # suppress opening of plots
 
 def make_directory(path):
     try:
