@@ -13,6 +13,7 @@ from scipy.optimize import curve_fit
 from matplotlib.patches import Patch
 import matplotlib.gridspec as gridspec
 from scipy.stats import moment, kurtosis
+matplotlib.use('Agg')   # suppress opening of plots
 
 def make_directory(path):
     try:
@@ -123,7 +124,7 @@ def round_sig(x, sig=2):
 #-----------------------------------------------------------------------
 plt.close('all')
 
-plt.rcParams['figure.figsize'] = [5.0, 4.5]
+plt.rcParams['figure.figsize'] = [6.0, 6.0]
 plt.rcParams['figure.dpi'] = 200
 plt.rcParams['savefig.dpi'] = 200
 
@@ -201,7 +202,6 @@ for file in sorted(files, reverse=False):
 
     title = str( 'Working Point = ' + tune_tit + ', Turn = ' + str(turn) )    
     
-    plt.rcParams['figure.figsize'] = [6.0, 6.0]
     fig1, ax1 = plt.subplots(constrained_layout=True)
     ax1.set_title(title) 
     r = resonance_lines((min_tune, max_tune),(min_tune, max_tune),(1,2,3,4),10)
@@ -290,7 +290,7 @@ if transverse_plane is 'V':
 
         title = str( 'Working Point = ' + tune_tit + ', Turn = ' + str(turn) )    
         
-        plt.rcParams['figure.figsize'] = [6.0, 6.0]
+
         fig1, ax1 = plt.subplots(constrained_layout=True)
         ax1.set_title(title) 
       
@@ -418,6 +418,22 @@ if transverse_plane is 'V':
 # Horizontal Phase Space
 #-----------------------------------------------------------------------  
 else:
+    plt.rcParams['figure.figsize'] = [6.0, 6.0]
+    plt.rcParams['figure.dpi'] = 200
+    plt.rcParams['savefig.dpi'] = 200
+
+    plt.rcParams['axes.titlesize'] = 14
+    plt.rcParams['axes.labelsize'] = 14
+
+    plt.rcParams['xtick.labelsize'] = 10
+    plt.rcParams['ytick.labelsize'] = 10
+
+    plt.rcParams['font.size'] = 10
+    plt.rcParams['legend.fontsize'] = 10
+
+    plt.rcParams['lines.linewidth'] = 1
+    plt.rcParams['lines.markersize'] = 5
+    
     max_1d_hist = 20
 
     first_turn = True
@@ -468,7 +484,6 @@ else:
 
         title = str( 'Working Point = ' + tune_tit + ', Turn = ' + str(turn) )    
         
-        plt.rcParams['figure.figsize'] = [6.0, 6.0]
         fig1, ax1 = plt.subplots(constrained_layout=True)
         ax1.set_title(title) 
       
