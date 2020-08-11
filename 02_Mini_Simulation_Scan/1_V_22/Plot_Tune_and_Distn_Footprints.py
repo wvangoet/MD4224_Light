@@ -62,7 +62,7 @@ class resonance_lines(object):
 		self.resonance_list = zip(nx, ny, res_sum)
 		
 	def plot_resonance(self, figure_object = None):	
-		plt.ion()
+		plt.ion() # turn on interactive plotting
 		if figure_object:
 			fig = figure_object
 			plt.figure(fig.number)
@@ -93,6 +93,37 @@ class resonance_lines(object):
 					plt.setp(line, color='r', linewidth=2.0) # systematic resonances
 		plt.draw()
 		return fig
+        
+	def plot_resonance_ax(self, axes_object, figure_object):
+		plt.ioff() # turn off interactive plotting
+		fig = figure_object
+		ax = axes_object
+		Qx_min = self.Qx_min
+		Qx_max = self.Qx_max
+		Qy_min = self.Qy_min
+		Qy_max = self.Qy_max 
+		ax.set_xlim(Qx_min, Qx_max)
+		ax.set_ylim(Qy_min, Qy_max)
+		ax.set_xlabel('Qx')
+		ax.set_ylabel('Qy')
+		for resonance in self.resonance_list:
+			nx = resonance[0]
+			ny = resonance[1]
+			for res_sum in resonance[2]:
+				if ny:
+					line, = ax.plot([Qx_min, Qx_max], \
+					    [(res_sum-nx*Qx_min)/ny, (res_sum-nx*Qx_max)/ny])
+				else:
+					line, = ax.plot([np.float(res_sum)/nx, np.float(res_sum)/nx],[Qy_min, Qy_max])
+				if ny%2:
+					plt.setp(line, linestyle='--') # for skew resonances
+				if res_sum%self.periodicity:
+					plt.setp(line, color='b')	# non-systematic resonances
+				else:
+					plt.setp(line, color='r', linewidth=2.0) # systematic resonances
+		fig.canvas.draw()
+		ax.draw(fig.canvas.renderer, inframe=False)
+		return ax
 		
 	def print_resonances(self):
 		for resonance in self.resonance_list:
@@ -144,7 +175,7 @@ plt.rcParams['lines.markersize'] = 5
 
 # Location of bunch files
 #-----------------------------------------------------------------------
-source_dir =  './1_V_22/bunch_output/'
+source_dir =  'bunch_output/'
 folder = source_dir
 
 files = glob.glob(source_dir + '*.mat')
@@ -170,6 +201,7 @@ max_1d_hist = 20
 min_tune = 5.80
 max_tune = 6.25
 q_fine = np.arange(5.5, 6.51, 0.01)
+r = resonance_lines((min_tune, max_tune),(min_tune, max_tune),(1,2,3,4),10)
 
 first_turn = False
 
@@ -186,7 +218,7 @@ for file in sorted(files, reverse=False):
     else:
         tune_tit = '(6.' + scan_tune + ', 6.24)'
         
-    print '\n\t Plotting ', case, ' scan tune =', tune_tit, ' turn = ', turn
+    print '\n\t Plotting ', case, ' scan tune =', tune_tit, ' turn = ', turn, ' tune footprint'
     
     # Load data 
     #------------------------------------------------------------------------------
@@ -205,7 +237,7 @@ for file in sorted(files, reverse=False):
     plt.rcParams['figure.figsize'] = [6.0, 6.0]
     fig1, ax1 = plt.subplots(constrained_layout=True)
     ax1.set_title(title) 
-    r = resonance_lines((min_tune, max_tune),(min_tune, max_tune),(1,2,3,4),10)
+    #r = resonance_lines((min_tune, max_tune),(min_tune, max_tune),(1,2,3,4),10)
  
     # Calculate RMS Qx and Qy
     #------------------------------------------------------------------------------
@@ -225,18 +257,21 @@ for file in sorted(files, reverse=False):
     
     # MAIN PLOT: TUNE FOOTPRINT
     #------------------------------------------------------------------------------
-    r.plot_resonance(fig1)
+    #r.plot_resonance(fig1)
+    r.plot_resonance_ax(ax1, fig1)
     ax1.hist2d(6+qx, 6+qy, bins=master_bins, cmap=my_cmap, vmin=1, range=[[r.Qx_min, r.Qx_max], [r.Qy_min, r.Qy_max]])
     ax1.set_xlabel(r'Q$_x$')
     ax1.set_ylabel(r'Q$_y$')
     ax1.set_ylim(min_tune, max_tune)
     ax1.grid(which='both', ls=':', lw=0.5)
  
-    plt.tight_layout()
+    #plt.tight_layout()
     savename = str(folder + '/Tune_Footprint_' + case + '_turn_' + str(turn) + '_simple.png' )
 
     fig1.savefig(savename, dpi=500)
-    plt.close(fig1)
+    plt.close(fig1)    
+    
+print 'Tune footprint complete'
 
 # Vertical Phase Space
 #-----------------------------------------------------------------------  
@@ -258,7 +293,7 @@ if transverse_plane is 'V':
         else:
             tune_tit = '(6.' + scan_tune + ', 6.24)'
             
-        print '\n\t Plotting ', case, ' scan tune =', tune_tit, ' turn = ', turn
+        print '\n\t Plotting ', case, ' scan tune =', tune_tit, ' turn = ', turn, ' vertical phase space'
         
         # Load data 
         #------------------------------------------------------------------------------
@@ -305,11 +340,13 @@ if transverse_plane is 'V':
         ax1.set_xlim(x_min, x_max)
         ax1.grid(which='both', ls=':', lw=0.5)
      
-        plt.tight_layout()
+        #plt.tight_layout()
         savename = str(folder + '/Vertical_Phase_Space_' + case + '_turn_' + str(turn) + '_simple.png' )
 
         fig1.savefig(savename, dpi=500)
         plt.close(fig1)
+    
+    print 'Vertical phase space complete'
 
 
 # Vertical Phase Space + Tune footprint
@@ -349,7 +386,7 @@ if transverse_plane is 'V':
         else:
             tune_tit = '(6.' + scan_tune + ', 6.24)'
             
-        print '\n\t Plotting ', case, ' scan tune =', tune_tit, ' turn = ', turn
+        print '\n\t Plotting ', case, ' scan tune =', tune_tit, ' turn = ', turn, ' vertical phase space and tune footprint'
         
         # Load data 
         #------------------------------------------------------------------------------
@@ -369,7 +406,6 @@ if transverse_plane is 'V':
         
         fig1 = plt.figure(constrained_layout=True)
         gs = gridspec.GridSpec(nrows=1,ncols=3,figure=fig1,width_ratios= [1, 1E-18, 1],height_ratios=[1],wspace=0.0,hspace=0.0)
-        r = resonance_lines((min_tune, max_tune),(min_tune, max_tune),(1,2,3,4),10)
             
         if first_turn:
             x_max_ = np.max(y)
@@ -403,7 +439,8 @@ if transverse_plane is 'V':
 
         ax1 = fig1.add_subplot(gs[0, 0])
         ax1.set_title(title) 
-        r.plot_resonance(fig1)
+        r.plot_resonance_ax(ax1, fig1)
+        #r.plot_resonance(fig1)
         ax1.hist2d(6+qx, 6+qy, bins=master_bins, cmap=my_cmap, vmin=1, range=[[r.Qx_min, r.Qx_max], [r.Qy_min, r.Qy_max]]) 
         ax1.set_xlabel(r'Q$_x$')
         ax1.set_ylabel(r'Q$_y$')
@@ -415,6 +452,7 @@ if transverse_plane is 'V':
         fig1.savefig(savename)
         plt.close(fig1)
 
+    print 'Vertical phase space and tune footprint script complete'
 
 # Horizontal Phase Space
 #-----------------------------------------------------------------------  
@@ -436,7 +474,7 @@ else:
         else:
             tune_tit = '(6.' + scan_tune + ', 6.24)'
             
-        print '\n\t Plotting ', case, ' scan tune =', tune_tit, ' turn = ', turn
+        print '\n\t Plotting ', case, ' scan tune =', tune_tit, ' turn = ', turn, ' horizontal phase space'
         
         # Load data 
         #------------------------------------------------------------------------------
@@ -482,11 +520,13 @@ else:
         ax1.set_xlim(x_min, x_max)
         ax1.grid(which='both', ls=':', lw=0.5)
      
-        plt.tight_layout()
+        #plt.tight_layout()
         savename = str(folder + '/Horizontal_Phase_Space_' + case + '_turn_' + str(turn) + '.png' )
 
         fig1.savefig(savename, dpi=500)
         plt.close(fig1)
+        
+    print 'Horizontal phase space complete'
 
 # Horizontal Phase Space + Tune footprint
 #-----------------------------------------------------------------------  
@@ -524,9 +564,8 @@ else:
         else:
             tune_tit = '(6.' + scan_tune + ', 6.24)'
             
-        print '\n\t Plotting ', case, ' scan tune =', tune_tit, ' turn = ', turn
-        
-        
+        print '\n\t Plotting ', case, ' scan tune =', tune_tit, ' turn = ', turn, ' horizontal phase space and tune footprint'
+                
         # Load data 
         #------------------------------------------------------------------------------
         particles = sio.loadmat(file, squeeze_me=True,  struct_as_record=False)['particles']
@@ -544,9 +583,6 @@ else:
         
         fig1 = plt.figure(constrained_layout=True)
         gs = gridspec.GridSpec(nrows=1,ncols=3,figure=fig1,width_ratios= [1, 1E-18, 1],height_ratios=[1],wspace=0.0,hspace=0.0)
-
-        #gs = gridspec.GridSpec(nrows=3,ncols=3,figure=fig,width_ratios= [1, 1, 1],height_ratios=[1, 1, 1],wspace=0.0,hspace=0.0)
-        r = resonance_lines((min_tune, max_tune),(min_tune, max_tune),(1,2,3,4),10)
             
         if first_turn:
             x_max_ = np.max(x)
@@ -566,12 +602,9 @@ else:
                 y_max = round_sig(-y_min_)
                 y_min = round_sig(y_min_)
             first_turn = False    
-        
-        #ax3 = fig1.add_subplot(gs[1, 0])
-        #ax3.axis('off')
-        
+                       
         ax2 = fig1.add_subplot(gs[0, 2])
-        ax2.hist2d(x, xp, bins=master_bins, cmap=my_cmap, vmin=1) #, norm=mcolors.PowerNorm(gamma))
+        ax2.hist2d(x, xp, bins=master_bins, cmap=my_cmap, vmin=1)
         ax2.set_xlabel('x [mm]')
         ax2.set_ylabel(r'$x^{\prime}$ [mrad]')
         ax2.set_ylim(y_min, y_max)
@@ -580,22 +613,21 @@ else:
             
         # MAIN PLOT: TUNE FOOTPRINT
         #------------------------------------------------------------------------------
-        #ax1 = fig.add_subplot(gs[1:3, 0:2])
         ax1 = fig1.add_subplot(gs[0, 0])
         ax1.set_title(title) 
-        r.plot_resonance(fig1)
-        ax1.hist2d(6+qx, 6+qy, bins=master_bins, cmap=my_cmap, vmin=1, range=[[r.Qx_min, r.Qx_max], [r.Qy_min, r.Qy_max]]) #, norm=mcolors.PowerNorm(gamma))
+        r.plot_resonance_ax(ax1, fig1)
+        #r.plot_resonance(fig1)
+        ax1.hist2d(6+qx, 6+qy, bins=master_bins, cmap=my_cmap, vmin=1, range=[[r.Qx_min, r.Qx_max], [r.Qy_min, r.Qy_max]])
         ax1.set_xlabel(r'Q$_x$')
         ax1.set_ylabel(r'Q$_y$')
         ax1.set_ylim(min_tune, max_tune)
         ax1.grid(which='both', ls=':', lw=0.5)
         
         savename = str(folder + '/H_Tune_and_Phase_' + case + '_turn_' + str(turn) + '.png' )
-        #tune_gifs.append(savename)
-        
-        #plt.tight_layout()
         fig1.savefig(savename)
         plt.close(fig1)
+        
+print 'Horizontal phase space and tune footprint script complete'
   
 # Plot 2x2 grid: Tune, x xp, y yp, longitudinal
 #-----------------------------------------------------------------------
@@ -637,7 +669,7 @@ for file in sorted(files, reverse=True):
     else:
         tune_tit = '(6.' + scan_tune + ', 6.24)'
         
-    print '\n\t Plotting ', case, ' scan tune =', tune_tit, ' turn = ', turn
+    print '\n\t Plotting ', case, ' scan tune =', tune_tit, ' turn = ', turn, ' All'
     
     # Load data 
     #------------------------------------------------------------------------------
@@ -661,7 +693,6 @@ for file in sorted(files, reverse=True):
     fig1 = plt.figure(constrained_layout=True)
     gs = gridspec.GridSpec(nrows=2,ncols=2,figure=fig1,width_ratios= [1, 1],height_ratios=[1, 1],wspace=10.0,hspace=0.0)
     fig1.suptitle(title)
-    r = resonance_lines((min_tune, max_tune),(min_tune, max_tune),(1,2,3,4),10)
  
     # Calculate limits from largest beam (at last turn)
     if first_turn:
@@ -723,7 +754,7 @@ for file in sorted(files, reverse=True):
     
     # x xp
     ax2 = fig1.add_subplot(gs[0, 0])
-    ax2.hist2d(x, xp, bins=master_bins, cmap=my_cmap, vmin=1) #, norm=mcolors.PowerNorm(gamma))
+    ax2.hist2d(x, xp, bins=master_bins, cmap=my_cmap, vmin=1) 
     ax2.set_xlabel('x [mm]')
     ax2.set_ylabel(r'$x^{\prime}$ [mrad]')
     ax2.set_ylim(y_min2, y_max2)
@@ -732,7 +763,7 @@ for file in sorted(files, reverse=True):
     
     # y yp
     ax1 = fig1.add_subplot(gs[1, 1])
-    ax1.hist2d(y, yp, bins=master_bins, cmap=my_cmap, vmin=1) #, norm=mcolors.PowerNorm(gamma))
+    ax1.hist2d(y, yp, bins=master_bins, cmap=my_cmap, vmin=1)
     ax1.set_xlabel('y [mm]')
     ax1.set_ylabel(r'$y^{\prime}$ [mrad]')
     ax1.set_ylim(y_min1, y_max1)
@@ -741,7 +772,7 @@ for file in sorted(files, reverse=True):
     
     # z dE
     ax3 = fig1.add_subplot(gs[0, 1])
-    ax3.hist2d(z, dE, bins=master_bins, cmap=my_cmap, vmin=1) #, norm=mcolors.PowerNorm(gamma))
+    ax3.hist2d(z, dE, bins=master_bins, cmap=my_cmap, vmin=1) 
     ax3.set_xlabel('z [m]')
     ax3.set_ylabel('dE [MeV]')
     ax3.set_ylim(y_min3, y_max3)
@@ -752,11 +783,10 @@ for file in sorted(files, reverse=True):
         
     # MAIN PLOT: TUNE FOOTPRINT
     #------------------------------------------------------------------------------
-    #ax1 = fig.add_subplot(gs[1:3, 0:2])
     ax4 = fig1.add_subplot(gs[1, 0])
-    #ax1.set_title(title) 
-    r.plot_resonance(fig1)
-    ax4.hist2d(6+qx, 6+qy, bins=master_bins, cmap=my_cmap, vmin=1, range=[[r.Qx_min, r.Qx_max], [r.Qy_min, r.Qy_max]]) #, norm=mcolors.PowerNorm(gamma))
+    #r.plot_resonance(fig1)
+    r.plot_resonance_ax(ax4, fig1)
+    ax4.hist2d(6+qx, 6+qy, bins=master_bins, cmap=my_cmap, vmin=1, range=[[r.Qx_min, r.Qx_max], [r.Qy_min, r.Qy_max]]) 
     ax4.set_xlabel(r'Q$_x$')
     ax4.set_ylabel(r'Q$_y$')
     ax4.set_ylim(min_tune, max_tune)
@@ -766,3 +796,5 @@ for file in sorted(files, reverse=True):
 
     fig1.savefig(savename)
     plt.close(fig1)
+    
+print 'Plotting script complete'
