@@ -266,7 +266,7 @@ for file in sorted(files, reverse=False):
     ax1.grid(which='both', ls=':', lw=0.5)
  
     #plt.tight_layout()
-    savename = str(folder + '/Tune_Footprint_' + case + '_turn_' + str(turn) + '_simple.png' )
+    savename = str(folder + '/Tune_Footprint_' + case + '_turn_' + str(turn) + '.png' )
 
     fig1.savefig(savename, dpi=500)
     plt.close(fig1)    
@@ -341,7 +341,7 @@ if transverse_plane is 'V':
         ax1.grid(which='both', ls=':', lw=0.5)
      
         #plt.tight_layout()
-        savename = str(folder + '/Vertical_Phase_Space_' + case + '_turn_' + str(turn) + '_simple.png' )
+        savename = str(folder + '/Vertical_Phase_Space_' + case + '_turn_' + str(turn) + '.png' )
 
         fig1.savefig(savename, dpi=500)
         plt.close(fig1)
