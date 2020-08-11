@@ -3,7 +3,8 @@ import shutil
 pyorbit = False
 simulation_parameters = False
 lib_bunch_gather = False
-bunch_plotting = False
+bunch_plotting = True
+plotting_script = True
 
 Horizontal_Scan_NoSC = True
 Horizontal_Scan = True
@@ -15,6 +16,7 @@ pyorbit_file = master_directory + '/pyOrbit.py'
 sim_params_file = master_directory + '/simulation_parameters.py'
 flat_file = master_directory + '/lib/pyOrbit_Bunch_Gather.py'
 bunch_plotting_file = master_directory + '/Plot_Tune_and_Distn_Footprints.py'
+plotting_script_file = master_directory + '/Make_SLURM_plotting_script.py'
 
 H_locations = []
 H_locations.append('./1_H_07')
@@ -160,3 +162,21 @@ if bunch_plotting_file:
 		for loc in H_locations_NoSC:
 			newPath = shutil.copy(bunch_plotting_file, loc)
 			print bunch_plotting_file, ' copied to ', loc
+                        
+if plotting_script:
+	if Vertical_Scan:
+		for loc in V_locations:
+			newPath = shutil.copy(plotting_script_file, loc)
+			print plotting_script_file, ' copied to ', loc
+	if Horizontal_Scan:
+		for loc in H_locations:
+			newPath = shutil.copy(plotting_script_file, loc)
+			print plotting_script_file, ' copied to ', loc
+	if Vertical_Scan_NoSC:
+		for loc in V_locations_NoSC:
+			newPath = shutil.copy(plotting_script_file, loc)
+			print plotting_script_file, ' copied to ', loc
+	if Horizontal_Scan_NoSC:
+		for loc in H_locations_NoSC:
+			newPath = shutil.copy(plotting_script_file, loc)
+			print plotting_script_file, ' copied to ', loc

@@ -11,6 +11,7 @@
 - **pyOrbit.py**: main simulation file
 - **Flat_file.madx**: MAD-X script used to create a PTC flat file, read by PyORBIT to create the accelerator lattice
 - **Make_SLURM_submission_script.py**: used to automatically generate the HPC-Batch simulation submission script
+- **Make_SLURM_plotting_script.py**: used to automatically generate the HPC-Batch plotting submission script
 - **Plot_Tune_and_Distn_Footprints.py**: used to plot tune footprint and bunch distributions for dumped turns (select in simulation parameters)
 - **clean_all.sh**: resets simulation folder completely - **WARNING: removes all simulation output**
 - **clean_run.sh**: removes simulation output files
@@ -30,7 +31,14 @@
 
 ## Submit_All.py
 - python script used to go into each simulation folder, run Make_SLURM_submission_script to create SLURM_submission_script.sh for each simulation, then calls the script to launch on HPC-Batch
+- use like: python Submit_All.py
 
-## Plot_SLURM.sh
-- SLURM submission script to plot bunch distirbutions and tune footprints for all space charge simulations in the scan
-- use like: sbatch Plot_SLURM.sh (on HPC-Batch only)
+## Submit_Plots.py
+- python script used to go into each simulation folder, run Make_SLURM_plotting_script to create SLURM_plotting_script.sh for each simulation, then calls the script to launch on HPC-Batch
+- use like: python Submit_All.py
+
+## distribute_master.py
+- python script to copy individual files from 00_master to selected simulation scan folders
+
+## Git_Commands.sh
+- example Git commands used to save data etc
