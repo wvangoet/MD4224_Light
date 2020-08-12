@@ -9,3 +9,5 @@ Environment to compaer simulated bunch profiles with measurements (MD4224)
 
 ## Various Folders
 - Contain output plots from Horizontal / Vertican _Tune_Scan.ipynb
+- Contain saved MD dataframes (analysed in via SWAN/EOS)
+- Contain simlation dataframes saved in Horizontal / Vertican _Tune_Scan.ipynb
