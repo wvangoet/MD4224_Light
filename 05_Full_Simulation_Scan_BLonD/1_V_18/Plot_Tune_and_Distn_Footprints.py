@@ -191,8 +191,8 @@ scan_tune = os.getcwd().split('/')[-1][-2:]
 main_label = ''
 sc = 'SbS'
 legend_label = 'Turn'
-master_bins = 128 # For mini simulation N_mp = 5E4, 64 x 64 x 32
-#master_bins = 512 # For full simulation N_mp = 5E5, 128 x 128 x 64
+#master_bins = 128 # For mini simulation N_mp = 5E4, 64 x 64 x 32
+master_bins = 512 # For full simulation N_mp = 5E5, 128 x 128 x 64
 
 # Tune footprint
 #-----------------------------------------------------------------------  
