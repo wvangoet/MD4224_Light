@@ -6,6 +6,7 @@ Environment to compare simulated bunch profiles with measurements (MD4224)
 
 ## Horizontal / Vertical _Tune_Scan.ipynb
 - Horizontal/Vertical scan notebooks used to call saved MD data and compare to simulations in this repository
+- run like: jupyter notebook Vertical_Tune_Scan.ipynb &
 
 ## Various Folders
 - Contain output plots from Horizontal / Vertical _Tune_Scan.ipynb
