@@ -4,10 +4,10 @@ Environment to compaer simulated bunch profiles with measurements (MD4224)
 ## MD_Functions.ipynb
 - Contains all imports and functions used to analyse simulation data
 
-## Horizontal / Vertican _Tune_Scan.ipynb
+## Horizontal / Vertical _Tune_Scan.ipynb
 - Horizontal/Vertical scan notebooks used to call saved MD data and compare to simulations in this repository
 
 ## Various Folders
-- Contain output plots from Horizontal / Vertican _Tune_Scan.ipynb
+- Contain output plots from Horizontal / Vertical _Tune_Scan.ipynb
 - Contain saved MD dataframes (analysed in via SWAN/EOS)
-- Contain simlation dataframes saved in Horizontal / Vertican _Tune_Scan.ipynb
+- Contain simlation dataframes saved in Horizontal / Vertical _Tune_Scan.ipynb
