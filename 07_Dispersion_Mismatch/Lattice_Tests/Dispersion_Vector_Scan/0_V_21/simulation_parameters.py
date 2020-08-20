@@ -75,9 +75,9 @@ parameters['turns_update'] = sorted(tu)
 # Simulation switches
 #-----------------------------------------------------------------------
 switches = {
-        'Space_Charge':  False, # hard coded for dispersion mismatch sims
-        'CreateDistn':          False,  # Load from file to fix initial distribution to the incoming PSB beam
-	'Update_Twiss':	        False,  # Perform PTC twiss and dump each turn - needed to output tune/orbit changes
+        'Space_Charge': False, # hard coded for dispersion mismatch sims
+        'CreateDistn':  True,  # False = Load from file to fix initial distribution to the incoming PSB beam
+	'Update_Twiss':	False, # Perform PTC twiss and dump each turn - needed to output tune/orbit changes
 	'GridSizeX': 128,
 	'GridSizeY': 128,
 	'GridSizeZ': 64
