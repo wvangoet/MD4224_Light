@@ -6,7 +6,7 @@ import timeit
 import orbit_mpi
 import numpy as np
 import scipy.io as sio
-from scipy.stats import moment
+from math import log10, floor
 
 # Use switches in simulation_parameters.py in current folder
 #-------------------------------------------------------------
@@ -59,6 +59,8 @@ comm = orbit_mpi.mpi_comm.MPI_COMM_WORLD
 rank = orbit_mpi.MPI_Comm_rank(comm)
 print '\n\tStart PyORBIT simulation on MPI process: ', rank
 
+def round_sig(x, sig=4):
+    return round(x, sig-int(floor(log10(abs(x))))-1)
 
 # Function to check that a file isn't empty (common PTC file bug)
 def is_non_zero_file(fpath):  
