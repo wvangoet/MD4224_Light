@@ -273,7 +273,7 @@ if sts['turn'] < 0:
 #-----------------------------------------------------------------------
 	else:
 		print '\n\t\tLoad distribution from ', p['input_distn'] ,' on MPI process: ', rank
-		path_to_distn = p['bunch_file']
+		path_to_distn = p['input_distn']
 		bunch = bunch_from_matfile(path_to_distn)
 
 # Add Macrosize to bunch
