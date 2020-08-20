@@ -86,16 +86,16 @@ switches = {
 # Use space charge flag here for dispersion mismatch
 if space_charge_flag:
         switches['Dispersion_Mismatch'] = True        
-        # ~ if transverse_plane == 'H': 
-                # ~ parameters['input_distn'] = '../../01_Generate_Initial_Distribution/' + str(parameters['n_macroparticles']) + '/1_H_21/bunch_output/mainbunch_-000001.mat'
-        # ~ else:
-                # ~ parameters['input_distn'] = '../../01_Generate_Initial_Distribution/' + str(parameters['n_macroparticles']) + '/1_V_24/bunch_output/mainbunch_-000001.mat'
+        if transverse_plane == 'H': 
+                parameters['input_distn'] = '../../01_Generate_Initial_Distribution/' + str(parameters['n_macroparticles']) + '/1_H_21/bunch_output/mainbunch_-000001.mat'
+        else:
+                parameters['input_distn'] = '../../01_Generate_Initial_Distribution/' + str(parameters['n_macroparticles']) + '/1_V_24/bunch_output/mainbunch_-000001.mat'
 else:
         switches['Dispersion_Mismatch'] = False
-        # ~ if transverse_plane == 'H': 
-                # ~ parameters['input_distn'] = '../../01_Generate_Initial_Distribution/' + str(parameters['n_macroparticles']) + '/0_H_21/bunch_output/mainbunch_-000001.mat'
-        # ~ else:
-                # ~ parameters['input_distn'] = '../../01_Generate_Initial_Distribution/' + str(parameters['n_macroparticles']) + '/0_V_24/bunch_output/mainbunch_-000001.mat'
+        if transverse_plane == 'H': 
+                parameters['input_distn'] = '../../01_Generate_Initial_Distribution/' + str(parameters['n_macroparticles']) + '/0_H_21/bunch_output/mainbunch_-000001.mat'
+        else:
+                parameters['input_distn'] = '../../01_Generate_Initial_Distribution/' + str(parameters['n_macroparticles']) + '/0_V_24/bunch_output/mainbunch_-000001.mat'
 
 # PTC RF Table Parameters
 #-----------------------------------------------------------------------
