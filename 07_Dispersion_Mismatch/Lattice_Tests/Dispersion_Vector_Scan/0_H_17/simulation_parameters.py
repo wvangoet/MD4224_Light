@@ -64,7 +64,7 @@ parameters['sig_z'] 	= (parameters['beta'] * c * parameters['blength'])/4.
 # Define how often we dump bunch output files
 #-----------------------------------------------------------------------
 tu1 = range(-1, parameters['turns_max'], 100) # every 100 turns
-tu2 = range(1, 100)              # every turn for the first 100 turns
+tu2 = range(0, 100)              # every turn for the first 100 turns
 tu = tu2 + tu1
 tu.append(874) # Wire Scanner at ctime = 172 s
 tu.append(2185)# Wire Scanner at ctime = 175 s
