@@ -252,7 +252,7 @@ if sts['turn'] < 0:
                                 Delta_D, D_M = find_dispersion_mismatch(Lattice.etax0, Lattice.betay0, M_D=0.35, verbose=True)
                         
                         twiss_dict['D_x'] = D_M
-			Dx  = 
+			Dx  = D_M
 			Dxp = Lattice.etapx0
                 else:
 			Dx  = Lattice.etax0
