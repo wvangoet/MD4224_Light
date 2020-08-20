@@ -247,9 +247,9 @@ if sts['turn'] < 0:
 		Dxp = 0.
 		if s['Dispersion_Mismatch']:
                         if p['transverse_plane_flag']:
-                                Delta_D, D_M = find_dispersion_mismatch(Lattice.etax0, Lattice.betax0, M_D=0.35, verbose=True):
+                                Delta_D, D_M = find_dispersion_mismatch(Lattice.etax0, Lattice.betax0, M_D=0.35, verbose=True)
                         else:
-                                Delta_D, D_M = find_dispersion_mismatch(Lattice.etax0, Lattice.betay0, M_D=0.35, verbose=True):
+                                Delta_D, D_M = find_dispersion_mismatch(Lattice.etax0, Lattice.betay0, M_D=0.35, verbose=True)
                         
                         twiss_dict['D_x'] = D_M
 			Dx  = 
