@@ -1,8 +1,8 @@
 import os
 
-Horizontal_Scan_NoSC = True
-Horizontal_Scan = True
-Vertical_Scan_NoSC = True
+Horizontal_Scan_NoSC = False
+Horizontal_Scan = False
+Vertical_Scan_NoSC = False
 Vertical_Scan = True
 
 master_dir = os.getcwd()
