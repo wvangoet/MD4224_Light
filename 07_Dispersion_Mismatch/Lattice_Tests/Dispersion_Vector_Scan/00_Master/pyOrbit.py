@@ -108,8 +108,7 @@ def find_dispersion_mismatch(D_0, Beta_0, M_D=0.35, verbose=True):
         print '\tD_mismatched = ', round_sig(D_m,5)
         print '\tDelta_D_mismatched = ', round_sig(Delta_D,5)
     
-    return Delta_D, D_m
-    
+    return Delta_D, D_m    
 
 # Create folder structure
 #-----------------------------------------------------------------------

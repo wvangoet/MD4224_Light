@@ -30,7 +30,7 @@ else:
         print 'For example: 0_H_07 will launch a no space charge simulation for the horizontal tune of 6.07'
         exit(0)
                 
-parameters['n_macroparticles']			= int(5E4) #int(5E5)
+parameters['n_macroparticles']			= int(5E5) #int(5E5)
 
 # Make sure to fix the initial distribution at the nominal working point (6.21, 6.24)
 parameters['tomo_file'] = '../../00_Longitudinal_Distribution/PyORBIT_Tomo_file_MD4224_HB.mat'
@@ -75,7 +75,7 @@ parameters['turns_update'] = sorted(tu)
 # Simulation switches
 #-----------------------------------------------------------------------
 switches = {
-        'Dispersion_Mismatch': True # Include dispersion mismatch of measured amplitude 0.35 (in normalised dispersion)
+        'Dispersion_Mismatch': True, # Include dispersion mismatch of measured amplitude 0.35 (in normalised dispersion)
         'CreateDistn': True,
 	'Update_Twiss':	False,  # Perform PTC twiss and dump each turn - needed to output tune changes
 	'GridSizeX': 128,
