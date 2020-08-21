@@ -253,8 +253,8 @@ if sts['turn'] < 0:
                         Dxp = Lattice.etapx0
                 print '\n\t Dispersion: Dx = ', Dx
                 print '\t Dispersion Dxp = ', Dxp
-                
-                Particle_distribution_file = generate_initial_distribution_from_tomo_manual_Twiss(p, twiss_dict, 1, Lattice, output_file='input/ParticleDistribution.in', summary_file='input/ParticleDistribution_summary.txt')
+
+                Particle_distribution_file = generate_initial_distribution_from_tomo_manual_Twiss(p, twiss_dict, 1, output_file='input/ParticleDistribution.in', summary_file='input/ParticleDistribution_summary.txt')
                 # ~ Particle_distribution_file = generate_initial_distribution_from_tomo(p, 1, Lattice, output_file='input/ParticleDistribution.in', summary_file='input/ParticleDistribution_summary.txt')
                 # ~ Particle_distribution_file = generate_initial_distribution_from_BLonD_manual_Twiss(p, twiss_dict, Lattice, output_file='input/ParticleDistribution.in', summary_file='input/ParticleDistribution_summary.txt')
 
