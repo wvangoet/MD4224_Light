@@ -42,7 +42,7 @@ V_locations.append('/1_V_23')
 V_locations.append('/1_V_24')
 
 H_locations_NoSC = []
-H_locations_NoSC.append('/0_H_07')
+#H_locations_NoSC.append('/0_H_07')
 H_locations_NoSC.append('/0_H_08')
 H_locations_NoSC.append('/0_H_09')
 H_locations_NoSC.append('/0_H_10')
