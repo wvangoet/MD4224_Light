@@ -27,7 +27,7 @@ transverse_plane = os.getcwd().split('/')[-1][2]
 print 'simulation_parameters: transverse_plane = ', transverse_plane
 scan_tune = os.getcwd().split('/')[-1][-2:]
 
-jobname = '2P_' + str(transverse_plane) + '_' + str(scan_tune)
+jobname = '3P_' + str(transverse_plane) + '_' + str(scan_tune)
 
 path_to_simulation = os.path.dirname(os.path.realpath(__file__)) # This directory
 
