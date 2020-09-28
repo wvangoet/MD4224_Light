@@ -3,7 +3,7 @@
   +    MAD-X 5.02.00  (64 bit, Linux)       +
   +           Production Version            +
   + Code Modification Date: 2014.03.05      +
-  + Execution Time Stamp: 21.09.20 09.50.54 +
+  + Execution Time Stamp: 21.09.20 09.54.23 +
   +++++++++++++++++++++++++++++++++++++++++++
 TITLE, "Flat file generation for PTC-PyORBIT";
 
@@ -61,7 +61,7 @@ distributed_quad_error = 0;	! Add quadrupolar error on all QDNs
 
 
 
-match_tunes = 1;                ! Match tunes to values in tunes.str
+match_tunes = 0;                ! Match tunes to values in tunes.str
 
 use_pfw = 0;	                ! Match tunes with PFW (1) or LEQ (0)
 
@@ -5756,9 +5756,9 @@ seqedit, sequence=PS;
 
 	flatten;
 
-	cycle , start=PR.BWSV64;
+	!cycle , start=PR.BWSV64;
 
-	!cycle , start=PR.BWSH65;
+	cycle , start=PR.BWSH65;
 
 	flatten;
 
@@ -5874,13 +5874,13 @@ ptc_create_layout, time=false, model=propagation_method, method=order_of_integra
      method                   6
      Num. of steps            5
      charge           1.00000000000000     
-  Length of machine:    628.318500000003     
+  Length of machine:    628.318500000002     
  The machine is a RING
  ------------------------------------ PTC Survey ------------------------------------
  Before start:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  Before   end:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  After  start:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
- After    end:  -2.497733945713898E-011  0.000000000000000E+000 -1.795967996542913E-008
+ After    end:  -7.562693320195601E-011  0.000000000000000E+000 -1.795675608207148E-008
   Bullshitting in MADX with Cavities            7
 select, flag=ptc_twiss, clear; 
 
@@ -5912,8 +5912,8 @@ ptc_twiss, icase=5, no=map_order, closed_orbit, file=optimised_bare_simplified.t
        RAMPING     =  FALSE
        ACCELERATE  =  FALSE
  Closed orbit:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
-Deviation from symplecticity  0.2500222251455853E-10 %
-Deviation from symplecticity  0.2500222251455853E-10 %
+Deviation from symplecticity  0.2655653474903374E-10 %
+Deviation from symplecticity  0.2655653474903374E-10 %
 
 ++++++ table: ptc_twiss_summary
 
@@ -6074,13 +6074,13 @@ START JACOBIAN:
      method                   6
      Num. of steps            3
      charge           1.00000000000000     
-  Length of machine:    628.318500000003     
+  Length of machine:    628.318500000002     
  The machine is a RING
  ------------------------------------ PTC Survey ------------------------------------
  Before start:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  Before   end:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  After  start:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
- After    end:  -2.497733945713898E-011  0.000000000000000E+000 -1.795967996542913E-008
+ After    end:  -7.562693320195601E-011  0.000000000000000E+000 -1.795675608207148E-008
 ++++++ info: Zero value of SIGT replaced by 1.
 ++++++ info: Zero value of SIGE replaced by 1/1000.
  ************ State Summary ****************
@@ -6104,8 +6104,8 @@ START JACOBIAN:
        MODULATION  =  FALSE
        RAMPING     =  FALSE
        ACCELERATE  =  FALSE
-Deviation from symplecticity  0.2152883787503709E-10 %
-Deviation from symplecticity  0.2152883787503709E-10 %
+Deviation from symplecticity  0.4240192649948109E-10 %
+Deviation from symplecticity  0.4240192649948109E-10 %
 
 ++++++ table: ptc_twiss_summary
 
@@ -6149,10 +6149,10 @@ Deviation from symplecticity  0.2152883787503709E-10 %
                  0                  0                  0                  0 
 
            pycorms             tcorms            ptcorms             xcomax 
-                 0    2.460108571e-14                  0                  0 
+                 0    2.496794702e-14                  0                  0 
 
             ycomax            pxcomax            pycomax             tcomax 
-                 0                  0                  0    4.207745263e-14 
+                 0                  0                  0    4.241051954e-14 
 
            ptcomax             xcomin             ycomin            pxcomin 
                  0                  0                  0                  0 
@@ -6161,7 +6161,7 @@ Deviation from symplecticity  0.2152883787503709E-10 %
                  0                  0                  0 
  Killing LayoutNo name assigned                                                                                                        
  Layout killed 
-Initial Penalty Function =   0.1331940959431902E-03
+Initial Penalty Function =   0.1331940959431109E-03
 
 
  Now PTC
@@ -6175,13 +6175,13 @@ Initial Penalty Function =   0.1331940959431902E-03
      method                   6
      Num. of steps            3
      charge           1.00000000000000     
-  Length of machine:    628.318500000003     
+  Length of machine:    628.318500000002     
  The machine is a RING
  ------------------------------------ PTC Survey ------------------------------------
  Before start:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  Before   end:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  After  start:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
- After    end:  -2.497733945713898E-011  0.000000000000000E+000 -1.795967996542913E-008
+ After    end:  -7.562693320195601E-011  0.000000000000000E+000 -1.795675608207148E-008
 ++++++ info: Zero value of SIGT replaced by 1.
 ++++++ info: Zero value of SIGE replaced by 1/1000.
  ************ State Summary ****************
@@ -6205,8 +6205,8 @@ Initial Penalty Function =   0.1331940959431902E-03
        MODULATION  =  FALSE
        RAMPING     =  FALSE
        ACCELERATE  =  FALSE
-Deviation from symplecticity  0.4503591897451783E-10 %
-Deviation from symplecticity  0.4503591897451783E-10 %
+Deviation from symplecticity  0.3363446400157399E-10 %
+Deviation from symplecticity  0.3363446400157399E-10 %
 
 ++++++ table: ptc_twiss_summary
 
@@ -6250,10 +6250,10 @@ Deviation from symplecticity  0.4503591897451783E-10 %
                  0                  0                  0                  0 
 
            pycorms             tcorms            ptcorms             xcomax 
-                 0    2.460108571e-14                  0                  0 
+                 0    2.496794702e-14                  0                  0 
 
             ycomax            pxcomax            pycomax             tcomax 
-                 0                  0                  0    4.207745263e-14 
+                 0                  0                  0    4.241051954e-14 
 
            ptcomax             xcomin             ycomin            pxcomin 
                  0                  0                  0                  0 
@@ -6273,13 +6273,13 @@ Deviation from symplecticity  0.4503591897451783E-10 %
      method                   6
      Num. of steps            3
      charge           1.00000000000000     
-  Length of machine:    628.318500000003     
+  Length of machine:    628.318500000002     
  The machine is a RING
  ------------------------------------ PTC Survey ------------------------------------
  Before start:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  Before   end:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  After  start:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
- After    end:  -2.497733945713898E-011  0.000000000000000E+000 -1.795967996542913E-008
+ After    end:  -7.562693320195601E-011  0.000000000000000E+000 -1.795675608207148E-008
 ++++++ info: Zero value of SIGT replaced by 1.
 ++++++ info: Zero value of SIGE replaced by 1/1000.
  ************ State Summary ****************
@@ -6303,8 +6303,8 @@ Deviation from symplecticity  0.4503591897451783E-10 %
        MODULATION  =  FALSE
        RAMPING     =  FALSE
        ACCELERATE  =  FALSE
-Deviation from symplecticity  0.3792718110133282E-10 %
-Deviation from symplecticity  0.3792718110133282E-10 %
+Deviation from symplecticity  0.3532590061604302E-10 %
+Deviation from symplecticity  0.3532590061604302E-10 %
 
 ++++++ table: ptc_twiss_summary
 
@@ -6348,10 +6348,10 @@ Deviation from symplecticity  0.3792718110133282E-10 %
                  0                  0                  0                  0 
 
            pycorms             tcorms            ptcorms             xcomax 
-                 0    2.460108571e-14                  0                  0 
+                 0    2.496794702e-14                  0                  0 
 
             ycomax            pxcomax            pycomax             tcomax 
-                 0                  0                  0    4.207745263e-14 
+                 0                  0                  0    4.241051954e-14 
 
            ptcomax             xcomin             ycomin            pxcomin 
                  0                  0                  0                  0 
@@ -6361,7 +6361,7 @@ Deviation from symplecticity  0.3792718110133282E-10 %
  Killing LayoutNo name assigned                                                                                                        
  Layout killed 
  Solve system with            2 con,           2 var
- Rank             2   Condition number    3.67311813324486     
+ Rank             2   Condition number    3.67311812801267     
  Now PTC
  MAD-X Beam Parameters
                   Energy : 0.293824E+01
@@ -6373,13 +6373,13 @@ Deviation from symplecticity  0.3792718110133282E-10 %
      method                   6
      Num. of steps            3
      charge           1.00000000000000     
-  Length of machine:    628.318500000003     
+  Length of machine:    628.318500000002     
  The machine is a RING
  ------------------------------------ PTC Survey ------------------------------------
  Before start:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  Before   end:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  After  start:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
- After    end:  -2.497733945713898E-011  0.000000000000000E+000 -1.795967996542913E-008
+ After    end:  -7.562693320195601E-011  0.000000000000000E+000 -1.795675608207148E-008
 ++++++ info: Zero value of SIGT replaced by 1.
 ++++++ info: Zero value of SIGE replaced by 1/1000.
  ************ State Summary ****************
@@ -6403,8 +6403,8 @@ Deviation from symplecticity  0.3792718110133282E-10 %
        MODULATION  =  FALSE
        RAMPING     =  FALSE
        ACCELERATE  =  FALSE
-Deviation from symplecticity  0.2856357902994600E-10 %
-Deviation from symplecticity  0.2856357902994600E-10 %
+Deviation from symplecticity  0.2652191141337108E-10 %
+Deviation from symplecticity  0.2652191141337108E-10 %
 
 ++++++ table: ptc_twiss_summary
 
@@ -6448,10 +6448,10 @@ Deviation from symplecticity  0.2856357902994600E-10 %
                  0                  0                  0                  0 
 
            pycorms             tcorms            ptcorms             xcomax 
-                 0    2.460108571e-14                  0                  0 
+                 0    2.496794702e-14                  0                  0 
 
             ycomax            pxcomax            pycomax             tcomax 
-                 0                  0                  0    4.207745263e-14 
+                 0                  0                  0    4.241051954e-14 
 
            ptcomax             xcomin             ycomin            pxcomin 
                  0                  0                  0                  0 
@@ -6460,7 +6460,7 @@ Deviation from symplecticity  0.2856357902994600E-10 %
                  0                  0                  0 
  Killing LayoutNo name assigned                                                                                                        
  Layout killed 
- Step length   0.103800032898729     
+ Step length   0.103800032825935     
  Now PTC
  MAD-X Beam Parameters
                   Energy : 0.293824E+01
@@ -6472,13 +6472,13 @@ Deviation from symplecticity  0.2856357902994600E-10 %
      method                   6
      Num. of steps            3
      charge           1.00000000000000     
-  Length of machine:    628.318500000003     
+  Length of machine:    628.318500000002     
  The machine is a RING
  ------------------------------------ PTC Survey ------------------------------------
  Before start:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  Before   end:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  After  start:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
- After    end:  -2.497733945713898E-011  0.000000000000000E+000 -1.795967996542913E-008
+ After    end:  -7.562693320195601E-011  0.000000000000000E+000 -1.795675608207148E-008
 ++++++ info: Zero value of SIGT replaced by 1.
 ++++++ info: Zero value of SIGE replaced by 1/1000.
  ************ State Summary ****************
@@ -6502,8 +6502,8 @@ Deviation from symplecticity  0.2856357902994600E-10 %
        MODULATION  =  FALSE
        RAMPING     =  FALSE
        ACCELERATE  =  FALSE
-Deviation from symplecticity  0.2856357902994600E-10 %
-Deviation from symplecticity  0.2856357902994600E-10 %
+Deviation from symplecticity  0.2652191141337108E-10 %
+Deviation from symplecticity  0.2652191141337108E-10 %
 
 ++++++ table: ptc_twiss_summary
 
@@ -6547,10 +6547,10 @@ Deviation from symplecticity  0.2856357902994600E-10 %
                  0                  0                  0                  0 
 
            pycorms             tcorms            ptcorms             xcomax 
-                 0    2.460108571e-14                  0                  0 
+                 0    2.496794702e-14                  0                  0 
 
             ycomax            pxcomax            pycomax             tcomax 
-                 0                  0                  0    4.207745263e-14 
+                 0                  0                  0    4.241051954e-14 
 
            ptcomax             xcomin             ycomin            pxcomin 
                  0                  0                  0                  0 
@@ -6559,7 +6559,7 @@ Deviation from symplecticity  0.2856357902994600E-10 %
                  0                  0                  0 
  Killing LayoutNo name assigned                                                                                                        
  Layout killed 
-call:     2 Dx =   0.10380003E+00  Penalty function =  0.1153181301648879E-09
+call:     2 Dx =   0.10380003E+00  Penalty function =  0.1153182720507660E-09
  ++++++++++ JACOBIAN ended: converged successfully
  Now PTC
  MAD-X Beam Parameters
@@ -6572,13 +6572,13 @@ call:     2 Dx =   0.10380003E+00  Penalty function =  0.1153181301648879E-09
      method                   6
      Num. of steps            3
      charge           1.00000000000000     
-  Length of machine:    628.318500000003     
+  Length of machine:    628.318500000002     
  The machine is a RING
  ------------------------------------ PTC Survey ------------------------------------
  Before start:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  Before   end:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  After  start:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
- After    end:  -2.497733945713898E-011  0.000000000000000E+000 -1.795967996542913E-008
+ After    end:  -7.562693320195601E-011  0.000000000000000E+000 -1.795675608207148E-008
 ++++++ info: Zero value of SIGT replaced by 1.
 ++++++ info: Zero value of SIGE replaced by 1/1000.
  ************ State Summary ****************
@@ -6602,8 +6602,8 @@ call:     2 Dx =   0.10380003E+00  Penalty function =  0.1153181301648879E-09
        MODULATION  =  FALSE
        RAMPING     =  FALSE
        ACCELERATE  =  FALSE
-Deviation from symplecticity  0.2856357902994600E-10 %
-Deviation from symplecticity  0.2856357902994600E-10 %
+Deviation from symplecticity  0.2652191141337108E-10 %
+Deviation from symplecticity  0.2652191141337108E-10 %
 
 ++++++ table: ptc_twiss_summary
 
@@ -6647,10 +6647,10 @@ Deviation from symplecticity  0.2856357902994600E-10 %
                  0                  0                  0                  0 
 
            pycorms             tcorms            ptcorms             xcomax 
-                 0    2.460108571e-14                  0                  0 
+                 0    2.496794702e-14                  0                  0 
 
             ycomax            pxcomax            pycomax             tcomax 
-                 0                  0                  0    4.207745263e-14 
+                 0                  0                  0    4.241051954e-14 
 
            ptcomax             xcomin             ycomin            pxcomin 
                  0                  0                  0                  0 
@@ -6659,7 +6659,7 @@ Deviation from symplecticity  0.2856357902994600E-10 %
                  0                  0                  0 
  Killing LayoutNo name assigned                                                                                                        
  Layout killed 
- Final difference norm:  6.131329132871283E-002
+ Final difference norm:  6.131329130444992E-002
 
 MATCH SUMMARY
 
@@ -6668,7 +6668,7 @@ macro: ptc_twiss_macro(2)
   constraint: table(ptc_twiss_summary,q1)=tune_x      
   values:     +2.10009e-01=+2.10000e-01
   weight:     +1.00000e+00
-  penalty:    +9.46052e-06
+  penalty:    +9.46053e-06
 
   constraint: table(ptc_twiss_summary,q2)=tune_y      
   values:     +2.40005e-01=+2.40000e-01
@@ -6677,7 +6677,7 @@ macro: ptc_twiss_macro(2)
 
 
 
-Final Penalty Function =   1.15318130e-10
+Final Penalty Function =   1.15318272e-10
 
 
 
@@ -6688,7 +6688,7 @@ kd                        3.18488e-02  2.82773e-02 -1.00000e+20  1.00000e+20
 
 END MATCH SUMMARY
 
-VARIABLE "TAR" SET TO   1.15318130e-10
+VARIABLE "TAR" SET TO   1.15318272e-10
 kf =     -0.01724308215 ;
 kd =      0.03184875118 ;
 pfwk1_f =   -3.379844739e-05 ;
@@ -6734,13 +6734,13 @@ ptc_create_layout,time=true, model=propagation_method, exact=true, method=order_
      method                   6
      Num. of steps            5
      charge           1.00000000000000     
-  Length of machine:    628.318500000003     
+  Length of machine:    628.318500000002     
  The machine is a RING
  ------------------------------------ PTC Survey ------------------------------------
  Before start:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  Before   end:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  After  start:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
- After    end:  -2.497733945713898E-011  0.000000000000000E+000 -1.795967996542913E-008
+ After    end:  -7.562693320195601E-011  0.000000000000000E+000 -1.795675608207148E-008
 ptc_script, file="./PTC/resplit.ptc";
 
  I am in execsript: Script name is ./PTC/resplit.ptc                               
@@ -6870,8 +6870,8 @@ ptc_twiss, icase=5, no=map_order, deltap_dependency, closed_orbit, file=optimise
        RAMPING     =  FALSE
        ACCELERATE  =  FALSE
  Closed orbit:   0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
-Deviation from symplecticity  0.1071365218763276E-10 %
-Deviation from symplecticity  0.1071365218763276E-10 %
+Deviation from symplecticity  0.1160738172245601E-10 %
+Deviation from symplecticity  0.1160738172245601E-10 %
 
 ++++++ table: ptc_twiss_summary
 

@@ -61,7 +61,7 @@ distributed_quad_error = 0;	! Add quadrupolar error on all QDNs
 
 
 
-match_tunes = 1;                ! Match tunes to values in tunes.str
+match_tunes = 0;                ! Match tunes to values in tunes.str
 
 use_pfw = 0;	                ! Match tunes with PFW (1) or LEQ (0)
 

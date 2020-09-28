@@ -19,9 +19,9 @@ clean_all = True		# Clean simulation folder before running (False when resuming 
 # Must be chosen
 
 # ~ queue = 'inf-long', 'inf-short', 'batch-long', 'batch-short'
-queue = 'inf-long'
+queue = 'inf-short'
 
-n_nodes = 4 
+n_nodes = 2 
 
 jobname = '14_04_23'
 
@@ -34,7 +34,7 @@ manual_tasks = 40	# manually change ntasks
 # Defaults - can be changed
 output_file_name = 'slurm.%N.%j.out'
 error_file_name = 'slurm.%N.%j.err'
-root_dir = '/hpcscratch/user/harafiqu'
+root_dir = '/hpcscratch/user/wvangoet'
 simulation_file = 'pyOrbit.py'
 #-----------------------------------------------------------------------
 #	AUTOMATICALLY FORMAT SCRIPT
