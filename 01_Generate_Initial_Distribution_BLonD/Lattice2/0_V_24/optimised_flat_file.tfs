@@ -84,8 +84,8 @@
 @ PTCOMAX          %le                   0
 @ TITLE            %36s "Flat file generation for PTC-PyORBIT"
 @ ORIGIN           %22s "MAD-X 5.02.00 Linux 64"
-@ DATE             %08s "28/09/20"
-@ TIME             %08s "14.30.00"
+@ DATE             %08s "06/10/20"
+@ TIME             %08s "11.22.18"
 * NAME                                S               BETX               BETY               ALFX               ALFY              DISP1              DISP2              DISP3              DISP4                MU1                MU2                  X                 PX                  Y                 PY 
 $ %s                                %le                %le                %le                %le                %le                %le                %le                %le                %le                %le                %le                %le                %le                %le                %le 
  "PR.BWSV64"                          0        18.21873348        22.44782783      0.02361174752       0.0490315875       0.3052937424      0.07734254502                  0                  0                  0                  0                  0                  0                  0                  0

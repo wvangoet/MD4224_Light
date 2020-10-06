@@ -9,6 +9,7 @@ rm lib/spacecharge_tunespread/*.pyc
 # clean python files
 rm lib/*.pyc
 rm *.pyc
+rm core/core.*
 
 # ptc cleanup
 rm junk.txt

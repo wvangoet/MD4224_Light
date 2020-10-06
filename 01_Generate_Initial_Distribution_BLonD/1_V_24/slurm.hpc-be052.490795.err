@@ -1,0 +1,70 @@
+readlink: missing operand
+Try 'readlink --help' for more information.
+rm: cannot remove ‘PS.seq’: No such file or directory
+rm: cannot remove ‘ptc_twiss’: No such file or directory
+rm: cannot remove ‘tunespread.dat’: No such file or directory
+rm: cannot remove ‘PTC/*~’: No such file or directory
+rm: cannot remove ‘Input/*~’: No such file or directory
+rm: cannot remove ‘lib/*~’: No such file or directory
+rm: cannot remove ‘junk.txt’: No such file or directory
+rm: cannot remove ‘Negative_node.OUT’: No such file or directory
+rm: cannot remove ‘internal_mag_pot.txt’: No such file or directory
+rm: cannot remove ‘fort.18’: No such file or directory
+rm: cannot remove ‘PTC/*~’: No such file or directory
+rm: cannot remove ‘Input/*~’: No such file or directory
+rm: cannot remove ‘lib/*~’: No such file or directory
+rm: cannot remove ‘lib/spacecharge_tunespread/*.pyc’: No such file or directory
+rm: cannot remove ‘lib/*.pyc’: No such file or directory
+rm: cannot remove ‘*.pyc’: No such file or directory
+rm: cannot remove ‘junk.txt’: No such file or directory
+rm: cannot remove ‘Maxwellian_bend_for_ptc.txt’: No such file or directory
+rm: cannot remove ‘Negative_node.OUT’: No such file or directory
+rm: cannot remove ‘internal_mag_pot.txt’: No such file or directory
+rm: cannot remove ‘fort.18’: No such file or directory
+rm: cannot remove ‘Condor_Logfiles’: No such file or directory
+++++++ Error: seterrorflag : Errorcode: 10   Reported from ptc_twiss :
+++++++ Error: seterrorflag : Description: DA in twiss got unstable during Normal Form
+++++++ Error: seterrorflag : Errorcode: 10   Reported from ptc_twiss :
+++++++ Error: seterrorflag : Description: DA in twiss got unstable during Normal Form
+++++++ Error: seterrorflag : Errorcode: 10   Reported from ptc_twiss :
+++++++ Error: seterrorflag : Description: DA in twiss got unstable during Normal Form
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute
+adding particle phase information attribute

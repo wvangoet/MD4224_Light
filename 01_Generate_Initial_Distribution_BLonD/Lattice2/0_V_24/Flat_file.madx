@@ -94,12 +94,20 @@ seqedit,sequence = PS;
 	install, element=PR.QFN63,  at=Pos_LeQ63;
 endedit;
 
-
+IF(lattice_start==0){
 seqedit, sequence=PS;
+	flatten;
 	cycle , start=PR.BWSV64;
-	!cycle , start=PR.BWSH65;
 	flatten;
 endedit;
+}
+ELSE{
+seqedit, sequence=PS;
+	flatten;
+	cycle , start=PR.BWSH65;
+	flatten;
+endedit;
+}
 
 ! Use this if PTC doesn't find a closed solution - replace MONITOR with MARKER
 IF(start_lattice_marker==1){
