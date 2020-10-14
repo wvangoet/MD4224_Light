@@ -1,0 +1,720 @@
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+beta =  0.9159915293877255
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+beta =  0.9159915293877255
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+simulation_parameters: space charge =  0
+simulation_parameters: transverse_plane =  H
+beta =  0.9159915293877255
+
+	Start PyORBIT simulation on MPI process:  24
+
+		mkdir on MPI process:  24
+
+	Start PyORBIT simulation on MPI process:  33
+
+		mkdir on MPI process:  33
+
+	Start PyORBIT simulation on MPI process:  34
+
+		mkdir on MPI process:  34
+
+	Start PyORBIT simulation on MPI process:  35
+
+		mkdir on MPI process:  35
+
+	Start PyORBIT simulation on MPI process:  39
+
+		mkdir on MPI process:  39
+
+	Start PyORBIT simulation on MPI process:  20
+
+		mkdir on MPI process:  20
+
+	Start PyORBIT simulation on MPI process:  28
+
+		mkdir on MPI process:  28
+
+	Start PyORBIT simulation on MPI process:  22
+
+		mkdir on MPI process:  22
+
+	Start PyORBIT simulation on MPI process:  27
+
+		mkdir on MPI process:  27
+
+	Start PyORBIT simulation on MPI process:  30
+
+		mkdir on MPI process:  30
+
+	Start PyORBIT simulation on MPI process:  31
+
+		mkdir on MPI process:  31
+
+	Start PyORBIT simulation on MPI process:  23
+
+		mkdir on MPI process:  23
+
+	Start PyORBIT simulation on MPI process:  38
+
+		mkdir on MPI process:  38
+
+	Start PyORBIT simulation on MPI process:  29
+
+		mkdir on MPI process:  29
+
+	Start PyORBIT simulation on MPI process:  21
+
+		mkdir on MPI process:  21
+
+	Start PyORBIT simulation on MPI process:  32
+
+		mkdir on MPI process:  32
+
+	Start PyORBIT simulation on MPI process:  37
+
+		mkdir on MPI process:  37
+
+	Start PyORBIT simulation on MPI process:  36
+
+		mkdir on MPI process:  36
+
+	Start PyORBIT simulation on MPI process:  25
+
+		mkdir on MPI process:  25
+
+	Start PyORBIT simulation on MPI process:  26
+
+		mkdir on MPI process:  26
+
+	Start PyORBIT simulation on MPI process:  0
+
+		mkdir on MPI process:  0
+
+	Start PyORBIT simulation on MPI process:  3
+
+		mkdir on MPI process:  3
+
+	Start PyORBIT simulation on MPI process:  6
+
+		mkdir on MPI process:  6
+
+	Start PyORBIT simulation on MPI process:  8
+
+		mkdir on MPI process:  8
+
+	Start PyORBIT simulation on MPI process:  1
+
+		mkdir on MPI process:  1
+
+	Start PyORBIT simulation on MPI process:  2
+
+		mkdir on MPI process:  2
+
+	Start PyORBIT simulation on MPI process:  5
+
+		mkdir on MPI process:  5
+
+	Start PyORBIT simulation on MPI process:  7
+
+		mkdir on MPI process:  7
+
+	Start PyORBIT simulation on MPI process:  11
+
+		mkdir on MPI process:  11
+
+	Start PyORBIT simulation on MPI process:  12
+
+		mkdir on MPI process:  12
+
+	Start PyORBIT simulation on MPI process:  13
+
+		mkdir on MPI process:  13
+
+	Start PyORBIT simulation on MPI process:  14
+
+		mkdir on MPI process:  14
+
+	Start PyORBIT simulation on MPI process:  15
+
+		mkdir on MPI process:  15
+
+	Start PyORBIT simulation on MPI process:  16
+
+		mkdir on MPI process:  16
+
+	Start PyORBIT simulation on MPI process:  17
+
+		mkdir on MPI process:  17
+
+	Start PyORBIT simulation on MPI process:  19
+
+		mkdir on MPI process:  19
+
+	Start PyORBIT simulation on MPI process:  4
+
+		mkdir on MPI process:  4
+
+	Start PyORBIT simulation on MPI process:  9
+
+		mkdir on MPI process:  9
+
+	Start PyORBIT simulation on MPI process:  18
+
+		mkdir on MPI process:  18
+
+	Start PyORBIT simulation on MPI process:  10
+
+		mkdir on MPI process:  10
+
+Start MADX on MPI process:  1
+
+Start MADX on MPI process:  20
+
+Start MADX on MPI process:  3
+
+Start MADX on MPI process:  4
+
+Start MADX on MPI process:  21
+
+Start MADX on MPI process:  6
+
+Start MADX on MPI process:  22
+
+Start MADX on MPI process:  8
+
+Start MADX on MPI process:  24
+
+Start MADX on MPI process:  11
+
+Start MADX on MPI process:  25
+
+Start MADX on MPI process:  13
+
+Start MADX on MPI process:  26
+
+Start MADX on MPI process:  15
+
+Start MADX on MPI process:  27
+
+Start MADX on MPI process:  17
+
+Start MADX on MPI process:  28
+
+Start MADX on MPI process:  19
+
+Start MADX on MPI process:  29
+
+Start MADX on MPI process:  0
+
+Start MADX on MPI process:  31
+
+Start MADX on MPI process:  2
+
+Start MADX on MPI process:  33
+
+Start MADX on MPI process:  5
+
+Start MADX on MPI process:  23
+
+Start MADX on MPI process:  7
+
+Start MADX on MPI process:  30
+
+Start MADX on MPI process:  9
+
+Start MADX on MPI process:  32
+
+Start MADX on MPI process:  10
+
+Start MADX on MPI process:  34
+
+Start MADX on MPI process:  12
+
+Start MADX on MPI process:  35
+
+Start MADX on MPI process:  14
+
+Start MADX on MPI process:  36
+
+Start MADX on MPI process:  16
+
+Start MADX on MPI process:  37
+
+Start MADX on MPI process:  18
+
+Start MADX on MPI process:  38
+
+Start MADX on MPI process:  39
+
+		Create RF file on MPI process:  1
+
+		Create RF file on MPI process:  22
+
+		Create RF file on MPI process:  2
+
+		Create RF file on MPI process:  31
+
+		Create RF file on MPI process:  3
+
+		Create RF file on MPI process:  33
+
+		Create RF file on MPI process:  5
+
+		Create RF file on MPI process:  35
+
+		Create RF file on MPI process:  6
+
+		Create RF file on MPI process:  37
+
+		Create RF file on MPI process:  7
+
+		Create RF file on MPI process:  39
+
+		Create RF file on MPI process:  9
+
+		Create RF file on MPI process:  20
+
+		Create RF file on MPI process:  11
+
+		Create RF file on MPI process:  21
+
+		Create RF file on MPI process:  12
+
+		Create RF file on MPI process:  23
+
+		Create RF file on MPI process:  13
+
+		Create RF file on MPI process:  24
+
+		Create RF file on MPI process:  14
+
+		Create RF file on MPI process:  25
+
+		Create RF file on MPI process:  15
+
+		Create RF file on MPI process:  26
+
+		Create RF file on MPI process:  16
+
+		Create RF file on MPI process:  27
+
+		Create RF file on MPI process:  17
+
+		Create RF file on MPI process:  28
+
+		Create RF file on MPI process:  18
+
+		Create RF file on MPI process:  29
+
+		Create RF file on MPI process:  19
+
+		Create RF file on MPI process:  30
+
+		Create RF file on MPI process:  0
+
+		Create RF file on MPI process:  32
+
+		Create RF file on MPI process:  4
+
+		Create RF file on MPI process:  34
+
+		Create RF file on MPI process:  8
+
+		Create RF file on MPI process:  36
+
+		Create RF file on MPI process:  10
+
+		Create RF file on MPI process:  38
+
+		Read PTC flat file: on MPI process:  0
+
+		Read PTC flat file: on MPI process:  20
+
+		Read PTC flat file: on MPI process:  1
+
+		Read PTC flat file: on MPI process:  22
+
+		Read PTC flat file: on MPI process:  2
+
+		Read PTC flat file: on MPI process:  24
+
+		Read PTC flat file: on MPI process:  3
+
+		Read PTC flat file: on MPI process:  26
+
+		Read PTC flat file: on MPI process:  28
+
+		Read PTC flat file: on MPI process:  4
+
+		Read PTC flat file: on MPI process:  31
+
+		Read PTC flat file: on MPI process:  5
+
+		Read PTC flat file: on MPI process:  33
+
+		Read PTC flat file: on MPI process:  35
+
+		Read PTC flat file: on MPI process:  6
+
+		Read PTC flat file: on MPI process:  37
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+
+		Read PTC flat file: on MPI process:  7
+
+		Read PTC flat file: on MPI process:  39
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+
+		Read PTC flat file: on MPI process:  8
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+
+		Read PTC flat file: on MPI process:  9
+
+		Read PTC flat file: on MPI process:  21
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+
+		Read PTC flat file: on MPI process:  10
+
+		Read PTC flat file: on MPI process:  23
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+
+		Read PTC flat file: on MPI process:  11
+
+		Read PTC flat file: on MPI process:  25
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+
+		Read PTC flat file: on MPI process:  12
+
+		Read PTC flat file: on MPI process:  27
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+
+		Read PTC flat file: on MPI process:  13
+
+		Read PTC flat file: on MPI process:  29
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+
+		Read PTC flat file: on MPI process:  30
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+
+		Read PTC flat file: on MPI process:  14
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+
+		Read PTC flat file: on MPI process:  15
+
+		Read PTC flat file: on MPI process:  32
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+
+		Read PTC flat file: on MPI process:  16
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+
+		Read PTC flat file: on MPI process:  34
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+
+		Read PTC flat file: on MPI process:  17
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+
+		Read PTC flat file: on MPI process:  36
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+
+		Read PTC flat file: on MPI process:  18
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+
+		Read PTC flat file: on MPI process:  38
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+
+		Read PTC flat file: on MPI process:  19
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+file_name = PTC-PyORBIT_flat_file.flt Length =24
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+ =============PTC INIT=====START===========
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
+  File 
+ PTC-PyORBIT_flat_file.flt          `Ñ’            àýaí3¸    PTC/ramp_caviti
+ es.ptc              `Ñ’            6ddz9è    does not exist 
