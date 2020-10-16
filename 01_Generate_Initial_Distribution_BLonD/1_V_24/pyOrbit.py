@@ -137,7 +137,7 @@ orbit_mpi.MPI_Barrier(comm)
 #-----------------------------------------------------------------------
 print '\nStart MADX on MPI process: ', rank
 if not rank:
-	os.system("/afs/cern.ch/eng/sl/MAD-X/pro/releases/5.02.00/madx-linux64 < Flat_file.madx")
+	os.system("/afs/cern.ch/eng/sl/MAD-X/pro/releases/5.02.00/madx-linux64 < Flat_file.madx > madx_output_toscreen.txt")
 orbit_mpi.MPI_Barrier(comm)
 
 # Generate PTC RF table
