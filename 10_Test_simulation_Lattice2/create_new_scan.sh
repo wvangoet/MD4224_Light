@@ -1,6 +1,42 @@
 #!/bin/bash
 folder_in=00_Master
 
+rm -r 0_H_07
+rm -r 0_H_09
+rm -r 0_H_11
+rm -r 0_H_13
+rm -r 0_H_15
+rm -r 0_H_17
+rm -r 0_H_19
+rm -r 0_H_21
+
+rm -r 1_H_07
+rm -r 1_H_09
+rm -r 1_H_11
+rm -r 1_H_13
+rm -r 1_H_15
+rm -r 1_H_17
+rm -r 1_H_19
+rm -r 1_H_21
+
+rm -r 0_V_10
+rm -r 0_V_12
+rm -r 0_V_14
+rm -r 0_V_16
+rm -r 0_V_18
+rm -r 0_V_20
+rm -r 0_V_22
+rm -r 0_V_24
+
+rm -r 1_V_10
+rm -r 1_V_12
+rm -r 1_V_14
+rm -r 1_V_16
+rm -r 1_V_18
+rm -r 1_V_20
+rm -r 1_V_22
+rm -r 1_V_24
+
 cp -r ${folder_in} 0_H_07
 #cp -r ${folder_in} 0_H_08
 cp -r ${folder_in} 0_H_09

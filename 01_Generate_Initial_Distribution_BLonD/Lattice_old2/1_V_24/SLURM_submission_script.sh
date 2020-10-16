@@ -11,7 +11,7 @@
 #SBATCH --hint=nomultithread
 
 BATCH_ROOT_DIR=/hpcscratch/user/wvangoet
-RUN_DIR=/hpcscratch/user/wvangoet/git_workspace/MD4224_Light/01_Generate_Initial_Distribution_BLonD/1_V_24
+RUN_DIR=/hpcscratch/user/wvangoet/git_workspace/MD4224_Light/01_Generate_Initial_Distribution_BLonD/Lattice_old2/1_V_24
 OrigIwd=$(pwd)
 
 # Make an output folder in the root directory to hold SLURM info file

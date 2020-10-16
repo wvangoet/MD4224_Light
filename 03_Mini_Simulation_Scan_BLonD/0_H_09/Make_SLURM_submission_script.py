@@ -40,7 +40,7 @@ manual_tasks = 40	# manually change ntasks
 # Defaults - can be changed
 output_file_name = 'slurm.%N.%j.out'
 error_file_name = 'slurm.%N.%j.err'
-root_dir = '/hpcscratch/user/harafiqu'
+root_dir = '/hpcscratch/user/wvangoet'
 simulation_file = 'pyOrbit.py'
 #-----------------------------------------------------------------------
 #	AUTOMATICALLY FORMAT SCRIPT

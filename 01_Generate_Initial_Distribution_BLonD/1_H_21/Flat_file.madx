@@ -44,7 +44,7 @@ call, file="PS_Lattice/ps_mu.seq";
 IF(BCMS==1){call, file="PS_Lattice/ps_ss_h9.seq";}
 ELSE{call, file="PS_Lattice/ps_ss_h7.seq";}
 call, file="PS_Lattice/ps.str";
-call, file="PS_Lattice/ps_fb_lhc.str";
+call, file="PS_Lattice/ps_pro_bare_machine.str";
 call, file="PS_Lattice/macros.ptc";
 call, file="PS_Lattice/locations.str";
 call, file="tunes.str";
@@ -68,30 +68,6 @@ seqedit,sequence = PS;
 	call, file = 'PS_Lattice/remove_elements.seq';
 	remove, element=SELECTED;
 	flatten;
-endedit;
-
-seqedit,sequence = PS;
-	select, flag=seqedit, pattern= PR.QFN55;
-	select, flag=seqedit, pattern= PR.QDN72;
-	select, flag=seqedit, pattern= PR.QFN95;
-	select, flag=seqedit, pattern= PR.QFN99;
-	select, flag=seqedit, pattern= PR.QDN00;
-	remove, element=SELECTED;
-endedit;
-
-
-seqedit,sequence = PS;
-	PR.QFN13: MULTIPOLE, KNL:={0,kf};
-	PR.QDN14: MULTIPOLE, KNL:={0,kd};
-	PR.QFN25: MULTIPOLE, KNL:={0,kf};
-	PR.QDN26: MULTIPOLE, KNL:={0,kd};
-	PR.QFN63: MULTIPOLE, KNL:={0,kf};
-
-	install, element=PR.QFN13,  at=Pos_LeQ13;
-	install, element=PR.QDN14,  at=Pos_LeQ14;
-	install, element=PR.QFN25,  at=Pos_LeQ25;
-	install, element=PR.QDN26,  at=Pos_LeQ26;
-	install, element=PR.QFN63,  at=Pos_LeQ63;
 endedit;
 
 IF(lattice_start==0){
