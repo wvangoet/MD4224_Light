@@ -65,8 +65,8 @@ MM_AAIAP  : MULTIPOLE   , L := 0;         ! Multipole magnet, type 403
 MONAAFWP  : OCTUPOLE    , L := 0.22;      ! Octupole magnet, type 802
 MONDAFWP  : OCTUPOLE    , L :=  .5;       ! Octupole magnet, type MTE
 //---------------------- QUADRUPOLE     ---------------------------------------------
-MQNAAIAP  : QUADRUPOLE  , L := 0.12;      ! Quadrupole magnet, type 401, magnetic length according to EDMS371500
-MQNABIAP  : QUADRUPOLE  , L := 0.12;      ! Quadrupole magnet, type 402, magnetic length according to EDMS371500
+MQNAAIAP  : MULTIPOLE;		          ! Quadrupole magnet, type 401, magnetic length according to EDMS371500
+MQNABIAP  : MULTIPOLE;     		  ! Quadrupole magnet, type 402, magnetic length according to EDMS371500
 MQNBAFAP  : QUADRUPOLE  , L := .19;       ! Quadrupole magnet, type 406
 MQNBCAWP  : QUADRUPOLE  , L := .24;       ! Quadrupole magnet, type 407
 MQNBDAAP  : QUADRUPOLE  , L := .19;       ! Quadrupole magnet, type 408

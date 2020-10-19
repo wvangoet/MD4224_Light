@@ -30,8 +30,8 @@ match_tunes = 1;                ! Match tunes to values in tunes.str
 use_pfw = 0;	                ! Match tunes with PFW (1) or LEQ (0)
 match_chroma = 0;               ! Match chromaticity to given values
 
-BCMS = 0;		!Harmonic 9 for BCMS, 7 for Standard LHC beams
-LIU = 1;		!LIU (1) KE = 2GeV, pre-LIU (0) KE = 1.4GeV
+BCMS = 1;		!Harmonic 9 for BCMS, 7 for Standard LHC beams
+LIU = 0;		!LIU (1) KE = 2GeV, pre-LIU (0) KE = 1.4GeV
 
 start_lattice_marker = 0;
 
@@ -47,7 +47,7 @@ call, file="PS_Lattice/ps.str";
 call, file="PS_Lattice/ps_pro_bare_machine.str";
 call, file="PS_Lattice/macros.ptc";
 call, file="PS_Lattice/locations.str";
-call, file="tunes.str";
+call, file="PS_Lattice/tunes.str";
 
 /***********************************************************************
  * Create a MAD-X beam and tell MAD-X which accelerator lattice to use.
@@ -69,6 +69,7 @@ seqedit,sequence = PS;
 	remove, element=SELECTED;
 	flatten;
 endedit;
+
 
 IF(lattice_start==0){
 seqedit, sequence=PS;
