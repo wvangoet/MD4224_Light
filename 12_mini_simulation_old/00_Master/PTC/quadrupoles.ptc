@@ -7,33 +7,33 @@ set orbit state
 SET ORBIT RESTORE
 f f
 ramp
-   PR.QFN05 "./Tables/QT05" 1.0
+   PR.QFN05 "./Tables/QT05.dat" 1.0
 ramp
-   PR.QFN09 "./Tables/QT09" 1.0
+   PR.QFN09 "./Tables/QT09.dat" 1.0
 ramp
-   PR.QFN17 "./Tables/QT17" 1.0
+   PR.QFN17 "./Tables/QT17.dat" 1.0
 ramp
-   PR.QFN21 "./Tables/QT21" 1.0
+   PR.QFN21 "./Tables/QT21.dat" 1.0
 ramp
-   PR.QFN31 "./Tables/QT31" 1.0
+   PR.QFN31 "./Tables/QT31.dat" 1.0
 ramp
-   PR.QFN39 "./Tables/QT39" 1.0
+   PR.QFN39 "./Tables/QT39.dat" 1.0
 ramp
-   PR.QFN45 "./Tables/QT45" 1.0
+   PR.QFN45 "./Tables/QT45.dat" 1.0
 ramp
-   PR.QFN49 "./Tables/QT49" 1.0
+   PR.QFN49 "./Tables/QT49.dat" 1.0
 ramp
-   PR.QFN55 "./Tables/QT55" 1.0
+   PR.QFN55 "./Tables/QT55.dat" 1.0
 ramp
-   PR.QFN67 "./Tables/QT67" 1.0
+   PR.QFN67 "./Tables/QT67.dat" 1.0
 ramp
-   PR.QFN77 "./Tables/QT77" 1.0
+   PR.QFN77 "./Tables/QT77.dat" 1.0
 ramp
-   PR.QFN81 "./Tables/QT81" 1.0
+   PR.QFN81 "./Tables/QT81.dat" 1.0
 ramp
-   PR.QFN85 "./Tables/QT85" 1.0
+   PR.QFN85 "./Tables/QT85.dat" 1.0
 ramp
-   PR.QFN89 "./Tables/QT89" 1.0
+   PR.QFN89 "./Tables/QT89.dat" 1.0
 ramp
-   PR.QFN99 "./Tables/QT99" 1.0
+   PR.QFN99 "./Tables/QT99.dat" 1.0
 return
