@@ -11,11 +11,11 @@ ramp
 ramp
    PR.QFN09 "PTC/Tables/QT09.dat" 1.0
 ramp
-   PR.QFN17 "PTC/Tables/QT17.dat" 1.0
+   PR.QFW17 "PTC/Tables/QT17.dat" 1.0
 ramp
    PR.QFN21 "PTC/Tables/QT21.dat" 1.0
 ramp
-   PR.QFN31 "PTC/Tables/QT31.dat" 1.0
+   PR.QFW31 "PTC/Tables/QT31.dat" 1.0
 ramp
    PR.QFN39 "PTC/Tables/QT39.dat" 1.0
 ramp
