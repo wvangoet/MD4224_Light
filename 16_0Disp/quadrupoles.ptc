@@ -1,0 +1,39 @@
+select layout
+1
++time
++cavity
+SET ORBIT RAMPING
+set orbit state
+SET ORBIT RESTORE
+f f
+ramp
+   PR.QFN05 "PTC/Tables/QT05.dat" 1.0
+ramp
+   PR.QFN09 "PTC/Tables/QT09.dat" 1.0
+ramp
+   PR.QFN17 "PTC/Tables/QT17.dat" 1.0
+ramp
+   PR.QFN21 "PTC/Tables/QT21.dat" 1.0
+ramp
+   PR.QFN31 "PTC/Tables/QT31.dat" 1.0
+ramp
+   PR.QFN39 "PTC/Tables/QT39.dat" 1.0
+ramp
+   PR.QFN45 "PTC/Tables/QT45.dat" 1.0
+ramp
+   PR.QFN49 "PTC/Tables/QT49.dat" 1.0
+ramp
+   PR.QFN55 "PTC/Tables/QT55.dat" 1.0
+ramp
+   PR.QFN67 "PTC/Tables/QT67.dat" 1.0
+ramp
+   PR.QFN77 "PTC/Tables/QT77.dat" 1.0
+ramp
+   PR.QFN81 "PTC/Tables/QT81.dat" 1.0
+ramp
+   PR.QFN85 "PTC/Tables/QT85.dat" 1.0
+ramp
+   PR.QFN89 "PTC/Tables/QT89.dat" 1.0
+ramp
+   PR.QFN99 "PTC/Tables/QT99.dat" 1.0
+return
